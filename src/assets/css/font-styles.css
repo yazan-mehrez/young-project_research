@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "sf-compact-display-regular";
+    src: url("../fonts/SF-Compact-Display-Regular.otf") format("opentype"),
+    url("../fonts/SF-Compact-Display-Regular.otf") format("woff");
+}
+
+@font-face {
+    font-family: "sf-compact-display-medium";
+    src: url("../fonts/SF-Compact-Display-Meduim.otf") format("opentype"),
+    url("../fonts/SF-Compact-Display-Meduim.otf") format("woff");
+}
+
+@font-face {
+    font-family: "sf-compact-display-bold";
+    src: url("../fonts/SF-Compact-Display-Bold.otf") format("opentype"),
+    url("../fonts/SF-Compact-Display-Bold.otf") format("woff");
+}
+
+@font-face {
+    font-family: "sf-compact-display-heavy";
+    src: url("../fonts/SF-Compact-Display-Heavy.otf") format("opentype"),
+    url("../fonts/SF-Compact-Display-Heavy.otf") format("woff");
+}
+
+@font-face {
+    font-family: "dubai-bold";
+    src: url("../fonts/Dubai-Bold.ttf") format("opentype"),
+    url("../fonts/Dubai-Bold.ttf") format("woff");
+}
+
+@font-face {
+    font-family: "dubai-regular";
+    src: url("../fonts/Dubai-Regular.ttf") format("opentype"),
+    url("../fonts/Dubai-Regular.ttf") format("woff");
+}
+@font-face {
+    font-family: "ultra-light";
+    src: url("../fonts/GE_SS_Text_UltraLight.otf") format("opentype"),
+    url("../fonts/GE_SS_Text_UltraLight.otf") format("woff");
+}

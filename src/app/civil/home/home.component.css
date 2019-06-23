@@ -1,0 +1,19 @@
+.left-section{
+    background-color: gray;
+    height: 100%;
+
+}
+
+.top-home{
+    height: 900px;
+}
+
+.left-section input{
+    width: 70%;
+    height: 65px;
+}
+
+
+.left-section span{
+    color:#fdd97a;
+}

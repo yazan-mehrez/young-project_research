@@ -1,0 +1,16 @@
+
+.header {
+    height: 280px;
+    box-shadow: 10px 5px 5px #cac6c6;
+}
+
+.logo-left{
+    float: left;
+    padding: 44px 95px;
+}
+
+.logo-right{
+    float: right;
+    padding: 44px 95px;
+}
+
