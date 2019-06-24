@@ -1,11 +1,14 @@
 .top-home{
-    height: 700px;
+    height: 100%;
     color: #fff;
+    display: inline-block;
 }
 
 .right-section {
-    width: 50%;
-    display: inline;
+    color: black;
+    width: 51%;
+    float: right;
+    height: 100%;
 }
 
 .left-section {
@@ -13,7 +16,7 @@
     width: 50%;
     height: 100%;
     background-size: cover;
-    background-image: url("../../../assets/img/image_preview.jpg");
+    background-image: url("../../../assets/img/library.jpg");
     padding: 219px 75px;
 }
 
@@ -40,6 +43,16 @@
     margin: 50px auto;
 }
 
+
+.right-section{
+    color: black;
+
+}
+
+
+.right-section div{
+    display: inline-block;
+}
 /* Bootstrap 4 text input with search icon */
 
 .has-search .form-control {
@@ -56,4 +69,20 @@
     text-align: center;
     pointer-events: none;
     color: #aaa;
+}
+
+
+.navbar-login{
+    width: 100%;
+    margin: 0;
+
+}
+
+
+.navbar-login div{
+    display: inline-block;
+    font-size: 40px;
+    float: right;
+    margin-left: 15px;
+
 }
