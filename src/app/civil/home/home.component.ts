@@ -25,7 +25,10 @@ export class HomeComponent implements OnInit {
         // this.translateService.onLangChange.subscribe(lang => {
         //     console.log(lang);
         // });
-
+        document.querySelector( "#nav-toggle" )
+            .addEventListener( "click", function() {
+                this.classList.toggle( "active" );
+            });
 
     }
 }

@@ -1,7 +1,9 @@
-.top-home{
+.top-home {
     height: 100%;
     color: #fff;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     background-color: #f1f2f2;
 }
 
@@ -14,7 +16,7 @@
 }
 
 
-.navbar i{
+.navbar i {
     font-size: 51px;
     color: #fff;
     border: 30px;
@@ -37,31 +39,33 @@
 }
 
 
-.login-register{
-    color:#1b2850;
+.login-register {
+    display: flex;
+    justify-content: space-between;
+    color: #1b2850;
+    font-size: 25px;
 }
 
-.text span{
+.login-register div {
+    margin: 0 10px;
+}
+
+.text span {
     color: #fdd97a;
 
 }
 
-.search p{
+.search p {
     font-size: 16px;
     text-align: right;
     font-weight: bold;
 }
 
-/*.left-section input{*/
-    /*width: 100%;*/
-    /*height: 61px;*/
-/*}*/
-
-.text{
+.text {
     margin-top: 140px
 }
 
-.text p{
+.text p {
     font-size: 25px;
     margin-top: 75px;
     text-align: center;
@@ -75,11 +79,10 @@
 }
 
 
-
-
 .right-section {
     display: inline-block;
 }
+
 /* Bootstrap 4 text input with search icon */
 
 .has-search .form-control {
@@ -98,54 +101,34 @@
     color: #aaa;
 }
 
-
-.login-register{
-    display: inline-block;
-    font-size: 40px;
-    float: right;
-    margin-left: 15px;
-    margin-top: 20px;
-
+.navbar-login {
+    display: flex;
+    direction: rtl;
+    align-items: center;
+    padding: 15px;
 }
 
-
-.navbar-login div{
-    display: inline-block;
-    font-size: 40px;
-    float: right;
-    margin-left: 15px;
-    font-family: serif;
-
-}
-
-
-.navbar-login{
-    display: block;
-    height: 215px;
-}
-
-.navbar{
-    float: right;
+.navbar {
     background-color: #1b2850;
-    margin-left: 30px;
+    margin: 0;
     border-radius: 0;
 }
 
 
-.social-paper{
+.social-paper {
     display: block;
 }
 
-.social{
+.social {
     display: inline-block;
     margin-right: 25px;
 }
 
-.social div{
+.social div {
     display: block;
 }
 
-.social-paper{
+.social-paper {
     display: inline-block;
     float: right;
 
@@ -157,12 +140,57 @@
     margin-bottom: 16px;
 }
 
-input{
+input {
     height: 65px;
 }
 
-.left-section button{
+.left-section button {
     height: 65px;
     width: 72px;
     background-color: #1b2850;
+}
+
+
+#nav-toggle {
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+#nav-toggle span:before {
+    top: -10px;
+}
+
+#nav-toggle span:after {
+    bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    transition: all 500ms ease-in-out;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
 }
