@@ -2,13 +2,28 @@
     height: 100%;
     color: #fff;
     display: inline-block;
+    background-color: #f1f2f2;
 }
 
 .right-section {
     color: black;
-    width: 51%;
+    width: 50%;
     float: right;
     height: 100%;
+}
+
+
+.right-section i{
+    font-size: 51px;
+    color: #fff;
+    border: 30px;
+    text-align: center;
+    border-radius: unset;
+    line-height: inherit;
+    margin-top: -3px;
+    width: 115px;
+    height: 105px;
+
 }
 
 .left-section {
@@ -46,7 +61,7 @@
 
 .right-section{
     color: black;
-
+    margin-top: -3px;
 }
 
 
@@ -73,8 +88,11 @@
 
 
 .navbar-login{
-    width: 100%;
-    margin: 0;
+    display: inline-block;
+    font-size: 40px;
+    float: right;
+    margin-left: 15px;
+    margin-top: 20px;
 
 }
 
@@ -85,4 +103,12 @@
     float: right;
     margin-left: 15px;
 
+}
+
+
+.navbar{
+    float: right;
+    background-color: #1b2850;
+    margin-left: 30px;
+    border-radius: 0;
 }
