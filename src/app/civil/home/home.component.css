@@ -10,10 +10,11 @@
     width: 50%;
     float: right;
     height: 100%;
+    margin-top: -3px;
 }
 
 
-.right-section i{
+.navbar i{
     font-size: 51px;
     color: #fff;
     border: 30px;
@@ -59,13 +60,9 @@
 }
 
 
-.right-section{
-    color: black;
-    margin-top: -3px;
-}
 
 
-.right-section div{
+.right-section {
     display: inline-block;
 }
 /* Bootstrap 4 text input with search icon */
@@ -87,7 +84,7 @@
 }
 
 
-.navbar-login{
+.login-register{
     display: inline-block;
     font-size: 40px;
     float: right;
@@ -106,9 +103,41 @@
 }
 
 
+.navbar-login{
+    display: block;
+    height: 215px;
+}
+
 .navbar{
     float: right;
     background-color: #1b2850;
     margin-left: 30px;
     border-radius: 0;
 }
+
+
+.social-paper{
+    display: block;
+}
+
+.social{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.social div{
+    display: block;
+}
+
+.social-paper{
+    display: inline-block;
+    float: right;
+
+}
+
+.social i {
+    font-size: 20px;
+    color: #1b2850;
+    margin-bottom: 16px;
+}
+
