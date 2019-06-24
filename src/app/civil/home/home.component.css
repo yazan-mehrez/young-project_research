@@ -31,14 +31,25 @@
     display: inline-block;
     width: 50%;
     height: 100%;
-    background-size: cover;
+    background-size: contain;
     background-image: url("../../../assets/img/library.jpg");
     padding: 219px 75px;
+}
+
+
+.login-register{
+    color:#1b2850;
+}
+
+.text span{
+    color: #fdd97a;
+
 }
 
 .search p{
     font-size: 16px;
     text-align: right;
+    font-weight: bold;
 }
 
 /*.left-section input{*/
@@ -46,10 +57,14 @@
     /*height: 61px;*/
 /*}*/
 
+.text{
+    margin-top: 140px
+}
 
 .text p{
     font-size: 25px;
     margin-top: 75px;
+    text-align: center;
 }
 
 /* Styles for wrapping the search box */
@@ -99,6 +114,7 @@
     font-size: 40px;
     float: right;
     margin-left: 15px;
+    font-family: serif;
 
 }
 
@@ -141,3 +157,13 @@
     margin-bottom: 16px;
 }
 
+input{
+    height: 65px;
+}
+
+
+.left-section button{
+    height: 65px;
+    width: 72px;
+    background-color: #1b2850;
+}
