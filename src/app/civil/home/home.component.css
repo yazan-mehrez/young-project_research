@@ -273,25 +273,41 @@ input {
 
 
 .research-section {
-    height: 110px;
-    padding: 0px 115px;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 40px;
+}
+
+.title-search{
+    display: flex;
+    justify-content: space-between;
 }
 
 .title div {
     border: 13px solid #75cddd;
+    background-color: #75cddd;
     width: 40px;
     width: 55%;
 }
 
 
 .research-title {
-    padding: 60px 0;
+    padding: 20px;
     display: flex;
     height: 225px;
     width: 100%;
     justify-content: space-between;
 }
 
+
+
+.research-search{
+display: flex;
+flex-direction: column;
+width: 100%;
+text-align: right;
+padding: 20px;
+}
 
 .title {
     font-size: 45px;
@@ -333,7 +349,7 @@ body {
     display: inline-grid;
     text-align: center;
     vertical-align: middle;
-    margin: 0 30px 0 20%;
+    margin: 0 0 0 15%;
 }
 
 .split {
@@ -381,7 +397,7 @@ li a {
     vertical-align: middle;
     line-height: 1.5em; /*30px*/
     font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
+    font-size: 1.7em;
     font-weight: 700;
     color: darkslateblue; /*#fff;forestgreen*/
     background: transparent; /*#2f3036*/
@@ -527,4 +543,108 @@ img {
 
 .container {
     /*width: 0 !important;*/
+}
+
+
+.cards-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-items .c-item{
+    border: 1px solid #1b2850;
+    width: 32.5%;
+    margin: 10px 0;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.cards-items .bookmark{
+    text-align: right;
+    position: relative;
+    top: -35px;
+    font-size: 35px;
+}
+
+.cards-items h3{
+    margin-top: -35px;
+}
+
+
+
+.research-search input{
+    height: 35px;
+}
+
+.research-search .row {
+    height: 9px;
+    width: 85%;
+}
+
+.research-input {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.research-search  .navigator {
+    margin-bottom: 30px  !important;
+}
+
+.view-more{
+    text-align: center
+}
+
+.view-more button{
+    width: 175px;
+    height: 70px;
+    background-color: #75cddd;
+    border: none;
+    margin-top: 35px;
+    color: #fff;
+    font-size: 25px;
+}
+
+
+/*about arab section*/
+
+.full-section {
+    position: relative;
+    background: #f1f2f2;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.full-section .sec-img img {
+    width: 100%;
+    padding: 0;
+}
+
+.full-section .side {
+    width: 50%;
+}
+
+.full-section .sec-content {
+    padding: 10px 85px;
+    text-align: left;
+}
+
+.full-section .left-sticker {
+    height: 155px;
+    width: 50px;
+    position: absolute;
+    background: orange;
+    left: 5%;
+}
+
+.full-section .center-sticker {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background: #1b2850;
+    top: 45%;
+    left: 47%;
+    bottom: 50%;
+    right: 50%;
 }
