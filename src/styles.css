@@ -5,14 +5,14 @@
 @import 'assets/css/datepicker.css';
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #e3bd34;
+    background: #1b2850;
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-    background: #e3bd34;
+    background: #1b2850;
 }

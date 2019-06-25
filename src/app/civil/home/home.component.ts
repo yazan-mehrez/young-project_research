@@ -17,18 +17,12 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
     ]
 })
 export class HomeComponent implements OnInit {
+    collapsed = false;
 
     constructor(private translateService: TranslateService, private _appService: AppService) {
     }
 
     ngOnInit() {
-        // this.translateService.onLangChange.subscribe(lang => {
-        //     console.log(lang);
-        // });
-        document.querySelector( "#nav-toggle" )
-            .addEventListener( "click", function() {
-                this.classList.toggle( "active" );
-            });
 
     }
 }

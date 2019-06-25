@@ -1,3 +1,13 @@
+<div class="nav-collapsed" *ngIf="collapsed">
+    <a>Home Page</a>
+    <a>Research Paper</a>
+    <a>About Us</a>
+    <a>How to Become a Researcher</a>
+    <a>Our Members</a>
+    <a>Heat Map</a>
+    <a>Contact Us</a>
+</div>
+
 <div class="top-home">
 
     <div class="left-section">
@@ -24,10 +34,14 @@
 
 
     <div class="right-section">
-
         <div class="navbar-login">
-            <div class="navbar">
-                <a id="nav-toggle"><span></span></a>
+            <div class="navbar"
+                 [style.z-index]="collapsed ? '550' : ''"
+                 [style.background-color]="collapsed ? '#fff' : ''"
+            >
+                <a id="nav-toggle" [ngClass]="collapsed ? 'active' : ''" (click)="collapsed = !collapsed">
+                    <span [style.color]="collapsed ? '#1b2850' : ''"></span>
+                </a>
             </div>
             <div class="login-register">
                 <div class="lang">العربية</div>
@@ -55,7 +69,6 @@
 
     </div>
 </div>
-
 
 <div class="research-section">
     <div class="research-title">
@@ -114,3 +127,4 @@
             <div class="paper-card"></div>
         </div>
     </div>
+</div>
