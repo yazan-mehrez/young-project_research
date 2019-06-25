@@ -14,7 +14,7 @@
 }
 
 
-.navbar i{
+.navbar i {
     font-size: 51px;
     color: #fff;
     border: 30px;
@@ -36,7 +36,6 @@
 }
 
 
-
 .login-register {
     display: flex;
     justify-content: space-between;
@@ -48,27 +47,27 @@
     margin: 0 10px;
 }
 
-.text span{
+.text span {
     color: #fdd97a;
 
 }
 
-.search p{
+.search p {
     font-size: 16px;
     text-align: right;
     font-weight: bold;
 }
 
 /*.left-section input{*/
-    /*width: 100%;*/
-    /*height: 61px;*/
+/*width: 100%;*/
+/*height: 61px;*/
 /*}*/
 
-.text{
+.text {
     margin-top: 140px
 }
 
-.text p{
+.text p {
     font-size: 25px;
     margin-top: 75px;
     text-align: center;
@@ -82,11 +81,10 @@
 }
 
 
-
-
 .right-section {
     display: inline-block;
 }
+
 /* Bootstrap 4 text input with search icon */
 
 .has-search .form-control {
@@ -106,22 +104,22 @@
 }
 
 
-.login-register{
+.login-register {
     display: flex;
     justify-content: space-between;
     font-size: 40px;
-    color:#1b2850;
+    color: #1b2850;
 
 }
 
 
-.navbar-login div{
-   margin: 0 20px;
+.navbar-login div {
+    margin: 0 20px;
 
 }
 
 
-.navbar-login{
+.navbar-login {
     display: flex;
     align-items: center;
     /*padding: 15px;*/
@@ -136,23 +134,23 @@
 }
 
 
-.social-paper{
+.social-paper {
     padding: 200px 0px 74px;
     display: flex;
     justify-content: flex-end;
 }
 
-.social{
+.social {
     display: inline-block;
     margin-right: 25px;
     margin-top: 35px;
 }
 
-.social div{
+.social div {
     display: block;
 }
 
-.box{
+.box {
     background-color: black;
     width: 190px;
     height: 190px;
@@ -161,34 +159,53 @@
 }
 
 .social i {
-    font-size: 20px;
+    font-size: 25px;
     color: #1b2850;
     margin-bottom: 16px;
 }
 
-input{
+input {
     height: 65px;
     border-radius: 0;
 }
 
-.left-section i{
+.left-section i {
     color: #fff;
     font-size: 25px;
 }
 
 
-.left-section button{
+.left-section button {
     height: 65px;
     width: 72px;
     background-color: #1b2850;
 }
 
+.social-paper img {
+    position: absolute;
+    right: 305px;
+    bottom: 135px;
+    width: 139px;
+}
 
 #nav-toggle {
     padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.paper {
+    position: absolute;
+    bottom: 45px;
+    right: 265px;
+}
+
+
+.paper p {
+
+    font-size: 39px;
+    font-weight: bold;;
 }
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
@@ -228,4 +245,251 @@ input{
 
 #nav-toggle.active span:after {
     transform: rotate(-45deg);
+}
+
+
+.research-section {
+    height: 110px;
+    padding:0px 115px;
+}
+
+.title div{
+    border: 13px solid #75cddd;
+    width: 40px;
+    width: 55%;
+}
+
+
+.research-title {
+    padding: 60px 0;
+    display: flex;
+    height: 225px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.title {
+    font-size: 45px;
+    font-weight: bold;
+
+}
+
+
+.research-papers{
+    padding: 0 80px;
+}
+
+
+
+
+/*Set background*/
+body {background-color: white;}
+
+/*Use a flex container to hold the Brand & navbar*/
+.header-container {
+    display:inline-table;
+    width:100%;
+    padding:20px;
+}
+
+.brand {
+    display: table-row;
+    text-align: left;
+    vertical-align: middle;
+    font-family:'Helvetica',sans-serif;
+    font-size: 1.25em;
+    font-weight:650;
+    background-color: transparent;
+    color: darkslateblue;
+    float: left;
+}
+
+.nav-block {
+    display: inline-grid;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 30px 0 20%;
+}
+
+.split {
+    display:inline-flex;
+    text-align:center;
+    vertical-align:middle;
+    float:right;
+    padding: 0 10px 0 10px;
+}
+
+.table-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+a.brand {text-decoration:none;}/* brand link styling*/
+
+/*Strip the ul of padding and list styling*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    position: absolute;
+    margin: 0 0 0 2%;
+}
+
+/*Create a horizontal list with spacing*/
+li {
+    display:inline-block;
+    float: left;
+    margin-right: 0px;
+    padding-left: 25px;
+}
+
+/*Style for menu links*/
+li a {
+    display: block;
+    min-width: 100px;
+    height: 25px;/*40px*/
+    text-align: center;
+    vertical-align:middle;
+    line-height: 1.5em;/*30px*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: darkslateblue;/*#fff;forestgreen*/
+    background: transparent;/*#2f3036*/
+    text-decoration: none;
+}
+
+/*Hover state for top level links*/
+li:hover a {
+    background: #f7f7f7;/*#19c589*/
+    color: slateblue;
+}
+
+/*Style for dropdown links*/
+li:hover ul a {
+    background: #F7F7F7;/*#f3f3f3*/
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+    text-align: justify;
+    z-index: 4;
+}
+
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+    background: #42426F;/* #19c589 darkblue*/
+    color: #ffffff;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+
+/*Increase the size of hamburger menu icon*/
+.grow {font-size:20px;margin: auto;}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #42426F;/*#19c589 darkblue*/
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+    border-radius: 6px;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+/*Responsive Styles*/
+@media screen and (max-width : 760px){
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+}
+
+/* Content */
+
+#content {
+    width: 100vw;
+    /*height: 100vh;*/
+    background: rgba(85,57,130,0.35);
+    margin-top: 30px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+}
+
+#content .block{
+
+}
+.col-md-10 {
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: rgb(85,57,130);
+    text-align: center;
+    font-family: 'Geneva';
+    font-size: 3em;
+    font-weight: 600;
+}
+
+img {
+    width: 100vw;
+    height: inherit;
+    padding-top: 30px;
+}
+
+
+
+.menu span{
+    color: #fdd97a;
+}
+
+
+.container{
+    /*width: 0 !important;*/
 }
