@@ -286,8 +286,7 @@ input {
 .title div {
     border: 13px solid #75cddd;
     background-color: #75cddd;
-    width: 40px;
-    width: 55%;
+    width: 205px;
 }
 
 
@@ -590,11 +589,11 @@ img {
     margin-bottom: 30px  !important;
 }
 
-.view-more{
+.button-action{
     text-align: center
 }
 
-.view-more button{
+.button-action button{
     width: 175px;
     height: 70px;
     background-color: #75cddd;
@@ -648,3 +647,53 @@ img {
     bottom: 50%;
     right: 50%;
 }
+
+
+/*become researcher*/
+
+.become-researcher{
+    display: flex;
+    flex-direction: column;
+    padding: 45px 40px;
+}
+
+.cards{
+    display: flex;
+    color: #1b2850;
+    justify-content: space-between;
+    padding: 55px 20px;
+}
+
+.become-researcher .button-action button{
+    width: 355px  !important;
+}
+
+.card-item{
+    width: 33%;
+    text-align: center;
+}
+
+.card-item img{
+    width: 45%;
+}
+
+
+.desc p {
+    margin: 60px 0 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.card-line {
+    background-color: #1b2850;
+    width: 34%;
+    height: 25px;
+    margin-left: 22%;
+}
+
+
+/*.register-member {*/
+/*    text-align: center;*/
+/*    margin-top: 30px;*/
+/*}*/
