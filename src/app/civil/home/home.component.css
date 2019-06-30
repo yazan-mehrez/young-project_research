@@ -134,22 +134,24 @@
 }
 
 
-.navbar-login div {
-    margin: 0 20px;
 
+.navbar-login div {
+    margin: 0 10px;
 }
 
 
 .navbar-login {
     display: flex;
+    height: 90px;
     align-items: center;
     /*padding: 15px;*/
     direction: rtl
 }
 
 .navbar {
+    height: 100%;
+    width: 100px;
     background-color: #1b2850;
-    /*margin-left: 30px;*/
     margin: 0 !important;
     border-radius: 0;
 }
@@ -205,13 +207,13 @@ input {
 .social-paper img {
     position: absolute;
     right: 305px;
-    bottom: 135px;
+    bottom: 162px;
     width: 139px;
 }
 
 #nav-toggle {
     cursor: pointer;
-    padding: 30px;
+    padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,7 +221,7 @@ input {
 
 .paper {
     position: absolute;
-    bottom: 45px;
+    bottom: 60px;
     right: 265px;
 }
 
