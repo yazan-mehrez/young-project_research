@@ -23,7 +23,7 @@ import {BreadcrumbComponent} from '../elements/breadcrumb/breadcrumb.component';
 import {FormsExamplesComponent} from '../elements/forms-examples/forms-examples.component';
 import {CaptchaComponent} from '../elements/captcha/captcha.component';
 import {AppSwiperComponent} from '../elements/app-swiper/app-swiper.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     direction: 'horizontal',
@@ -48,8 +48,9 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
-        AppRoutingModule,
+        FormsModule,
         ReactiveFormsModule,
+        AppRoutingModule,
         SlideshowModule,
         SwiperModule,
         MatCardModule,
