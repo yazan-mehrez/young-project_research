@@ -72,45 +72,45 @@
 
 <div class="research-section">
     <div class="title-search">
-    <div class="research-title">
-        <div class="title">
-            <p>Research Papers</p>
-            <div>
+        <div class="research-title">
+            <div class="title">
+                <p>Research Papers</p>
+                <div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="research-search">
-        <!--<div class="rsearch">-->
+        <div class="research-search">
+            <!--<div class="rsearch">-->
             <div class="navigator">
-                    <div class="nav-block">
-                        <!-- navbar only -->
-                        <!-- invoke the collapsed menu button for smallviewports -->
-                        <label for="show-menu" class="show-menu"><span class="grow">&nbsp;&nbsp;<i class="fas fa-bars">&nbsp;&darr;&nbsp;</i></span></label>
+                <div class="nav-block">
+                    <!-- navbar only -->
+                    <!-- invoke the collapsed menu button for smallviewports -->
+                    <label for="show-menu" class="show-menu"><span class="grow">&nbsp;&nbsp;<i class="fas fa-bars">&nbsp;&darr;&nbsp;</i></span></label>
 
-                        <input type="checkbox" id="show-menu" role="button">
-                        <div id="menu">
-                            <li>
-                                <!-- Use unicode &#x25BC; for dropdown tringle--->
-                                <a>Discipline <span>&#x25BE;</span></a>
-                                <ul class="hidden">
-                                    <li><a href="/mission">Mission</a></li>
-                                    <li><a href="/purpose">Purpose</a></li>
-                                    <li><a href="/leadership">Leadership</a>
-                                </ul>
-                            </li>
-                            <li><a>Country <span>&#x25BE;</span></a></li>
-                            <li>
-                                <a>Language <span>&#x25BE;</span> </a>
-                                <ul class="hidden">
-                                    <li><a href="/showcase">Showcase</a></li>
-                                    <li><a href="/scholarship">Scholarship</a></li>
-                                    <li><a href="/testimonials">Testimonials</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Year <span>&#x25BE;</span></a></li>
-                        </div>
-                    </div><!--nav-block-->
-                </div>
+                    <input type="checkbox" id="show-menu" role="button">
+                    <div id="menu">
+                        <li>
+                            <!-- Use unicode &#x25BC; for dropdown tringle--->
+                            <a>Discipline <span>&#x25BE;</span></a>
+                            <ul class="hidden">
+                                <li><a href="/mission">Mission</a></li>
+                                <li><a href="/purpose">Purpose</a></li>
+                                <li><a href="/leadership">Leadership</a>
+                            </ul>
+                        </li>
+                        <li><a>Country <span>&#x25BE;</span></a></li>
+                        <li>
+                            <a>Language <span>&#x25BE;</span> </a>
+                            <ul class="hidden">
+                                <li><a href="/showcase">Showcase</a></li>
+                                <li><a href="/scholarship">Scholarship</a></li>
+                                <li><a href="/testimonials">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Year <span>&#x25BE;</span></a></li>
+                    </div>
+                </div><!--nav-block-->
+            </div>
             <div class="col-lg-12 research-input">
                 <div class="row">
                     <div class="input-group">
@@ -123,9 +123,9 @@
                 </div>
             </div>
 
-        <!--</div>-->
+            <!--</div>-->
 
-    </div>
+        </div>
     </div>
     <div class="cards-items">
         <div class="c-item">
@@ -168,10 +168,10 @@
             </div>
         </div>
     </div>
-    <div class="button-action"> <button>View more</button> </div>
+    <div class="button-action">
+        <button>View more</button>
+    </div>
 </div>
-
-
 
 <div class="full-section">
     <div class="left-sticker"></div>
@@ -184,8 +184,10 @@
     <div class="side">
         <div class="sec-content">
             <h1 class="text-left">About Arab Youth Research Library</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aperiam atque consequuntur ducimus et
-                fuga fugiat non odit quos, ratione repellendus, sapiente temporibus totam veritatis! Ipsum laborum officia
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aperiam atque consequuntur ducimus
+                et
+                fuga fugiat non odit quos, ratione repellendus, sapiente temporibus totam veritatis! Ipsum laborum
+                officia
                 voluptatibus.</p>
 
             <h3>Read More</h3>
@@ -193,8 +195,6 @@
         </div>
     </div>
 </div>
-
-
 
 <div class="become-researcher">
     <div class="title">
@@ -215,11 +215,46 @@
             <div class="card-line"></div>
         </div>
         <div class="card-item">
-        <img src="assets/img/sharing-knowledge.PNG" alt="">
-        <div class="desc"><p>Sharing Knowledge</p></div>
-        <div class="card-line"></div>
+            <img src="assets/img/sharing-knowledge.PNG" alt="">
+            <div class="desc"><p>Sharing Knowledge</p></div>
+            <div class="card-line"></div>
+        </div>
     </div>
+    <div class="button-action">
+        <button>Register and be a member</button>
     </div>
-    <div class="button-action"> <button>Register and be a member</button> </div>
 
+</div>
+
+<div class="full-section with-slider">
+    <div class="left-sticker"></div>
+    <div class="center-sticker"></div>
+    <div class="side">
+        <div class="sec-img">
+            <ng-container *ngFor="let photo of dataList; let i = index">
+                <img [@fadeInOut] *ngIf="itemIndex == i" [src]="dataList[i]['photo']">
+            </ng-container>
+        </div>
+    </div>
+    <div class="side">
+        <div class="sec-content">
+            <h1 class="text-left">About Arab Youth Research Library</h1>
+            <div class="main-slider">
+                <div class="left-slide" (click)="prev()">
+                    <i class="fa fa-chevron-left"></i>
+                </div>
+                <div class="slider-control">
+                    <ng-container *ngFor="let text of dataList; let i = index">
+                        <p [@fadeInOut] *ngIf="itemIndex == i">{{dataList[i]['text']}}</p>
+                    </ng-container>
+                </div>
+                <div class="right-slide" (click)="next()">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+            </div>
+            <h3>Read More</h3>
+            <div class="blue-sep"></div>
+
+        </div>
+    </div>
 </div>
