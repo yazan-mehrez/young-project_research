@@ -12,7 +12,8 @@ import {MatCardModule, MatFormFieldModule, MatInputModule} from '@angular/materi
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SafePipe} from '../pipes/safeURLs.pipe';
 import {SWIPER_CONFIG, SwiperConfigInterface, SwiperModule} from 'ngx-swiper-wrapper';
-import {BsDatepickerModule, BsDropdownModule, DatepickerModule} from 'ngx-bootstrap';
+import {BsDatepickerModule, BsDropdownMenuDirective, DatepickerModule} from 'ngx-bootstrap';
+import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
 import {NgProgressHttpModule} from '@ngx-progressbar/http';
 import {NgProgressModule} from '@ngx-progressbar/core';
 import {CivilComponent} from './civil/civil.component';

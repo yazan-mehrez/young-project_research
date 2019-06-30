@@ -85,25 +85,25 @@
 
                     <input type="checkbox" id="show-menu" role="button">
                     <div id="menu">
-                        <li>
+                        <div class="drop-list" dropdown>
                             <!-- Use unicode &#x25BC; for dropdown tringle--->
-                            <a>Discipline <span>&#x25BE;</span></a>
-                            <ul class="hidden">
-                                <li><a href="/mission">Mission</a></li>
-                                <li><a href="/purpose">Purpose</a></li>
-                                <li><a href="/leadership">Leadership</a>
-                            </ul>
-                        </li>
-                        <li><a>Country <span>&#x25BE;</span></a></li>
-                        <li>
-                            <a>Language <span>&#x25BE;</span> </a>
-                            <ul class="hidden">
-                                <li><a href="/showcase">Showcase</a></li>
-                                <li><a href="/scholarship">Scholarship</a></li>
-                                <li><a href="/testimonials">Testimonials</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Year <span>&#x25BE;</span></a></li>
+                            <a dropdownToggle>Discipline <span>&#x25BE;</span></a>
+                            <div *dropdownMenu role="menu" class="dropdown-menu text-center">
+                                <div class="pt-2 pb-2"><a href="/mission">Mission</a></div>
+                                <div class="pt-2 pb-2"><a href="/purpose">Purpose</a></div>
+                                <div class="pt-2 pb-2"><a href="/leadership">Leadership</a></div>
+                            </div>
+                        </div>
+                        <div class="drop-list"><a>Country</a></div>
+                        <div class="drop-list" dropdown>
+                            <a dropdownToggle>Language <span>&#x25BE;</span> </a>
+                            <div *dropdownMenu role="menu" class="dropdown-menu text-center">
+                                <div class="pt-2 pb-2"><a href="/showcase">Showcase</a></div>
+                                <div class="pt-2 pb-2"><a href="/scholarship">Scholarship</a></div>
+                                <div class="pt-2 pb-2"><a href="/testimonials">Testimonials</a></div>
+                            </div>
+                        </div>
+                        <div class="drop-list"><a>Year</a></div>
                     </div>
                 </div><!--nav-block-->
             </div>
@@ -267,15 +267,15 @@
     <div class="map">
         <img src="assets/img/heat-map.PNG" alt="">
         <div class="statistics">
-            <div>
+            <div class="statis-item">
                 <div class="statistics-count">80+</div>
                 <div class="statistics-action">DOWNLOADS</div>
             </div>
-            <div>
+            <div class="statis-item">
                 <div class="statistics-count">230+</div>
                 <div lass="statistics-action">RESEARCHER</div>
             </div>
-            <div>
+            <div class="statis-item">
                 <div class="statistics-count">300+</div>
                 <div lass="statistics-action">RESEARCH</div>
             </div>

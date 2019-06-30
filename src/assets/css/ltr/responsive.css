@@ -1,21 +1,316 @@
+@media (min-width: 768px) and (max-width: 1220px) {
+    .top-home {
+        flex-direction: column-reverse;
+    }
 
-@media (min-width: 1600px) {
+    .right-section, .left-section {
+        width: 100%;
+    }
 
+    .social-paper {
+        padding: 75px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 40px 0;
+    }
 
-}
+    .social-paper img {
+        right: 390px;
+    }
 
-@media (min-width: 1440px) and (max-width: 1599px) {
+    .paper {
+        position: absolute;
+        bottom: -16px;
+        right: 360px;
+        margin-bottom: 10px;
+        color: #1b2850;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu a {
+        display: flex;
+    }
+
     .nav-block {
-        display: inline-grid;
-        text-align: center;
-        vertical-align: middle;
-        margin: 0 0 0 5%;
-    }
-
-
-    .research-search {
-        height: 9px;
-        width: 95%;
+        display: flex !important;
+        justify-content: center;
     }
 }
 
+@media (max-width: 425px) {
+    h1 {
+        font-size: 1.5em !important;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .header {
+        height: 175px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-left, .logo-right {
+        padding: 0 20px !important;
+    }
+
+    .logo-left img, .logo-right img {
+        width: 100px !important;
+    }
+
+    .top-home {
+        flex-direction: column-reverse;
+    }
+
+    .right-section, .left-section {
+        width: 100%;
+    }
+
+    .social-paper {
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 40px 0;
+    }
+
+    .paper {
+        position: absolute;
+        bottom: -16px;
+        margin-bottom: 10px;
+        color: #1b2850;
+        right: 120px;
+        font-size: 15px;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-block {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .login-register {
+        font-size: 20px;
+    }
+
+    .navbar-login {
+        display: flex;
+        height: 75px;
+        align-items: center;
+        direction: rtl;
+    }
+
+    .navbar {
+        width: 75px;
+    }
+
+    #nav-toggle {
+        padding: 35px;
+    }
+
+    .nav-collapsed a {
+        font-size: 15px;
+    }
+
+    .box {
+        margin: auto;
+    }
+
+    .social-paper img {
+        right: 100px;
+    }
+
+    .paper p {
+        font-size: 30px;
+    }
+
+    .title-search {
+        flex-direction: column-reverse;
+    }
+
+    .drop-list[_ngcontent-c5] {
+        display: inline-block;
+        float: left;
+        padding-left: 0;
+        margin: 0 10px;
+        font-size: 15px;
+        position: relative;
+    }
+
+    .navigator .nav-block {
+        margin: auto;
+    }
+
+    .research-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title p {
+        font-size: 20px;
+    }
+
+    .research-title {
+        padding: 20px;
+        display: flex;
+        height: 150px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .cards-items {
+        flex-direction: column;
+    }
+
+    .cards-items .c-item {
+        width: 100%;
+    }
+
+    .full-section {
+        flex-direction: column-reverse;
+    }
+
+    .full-section .side {
+        width: 100%;
+    }
+
+    .full-section .sec-content {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .sec-content h1 {
+        text-align: center !important;
+    }
+
+    .full-section .center-sticker {
+        display: none;
+    }
+
+    .become-researcher {
+        padding: 25px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .cards .card-item {
+        width: 100% !important;
+        border: 2px solid #1b2850;
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .heat-map .map {
+        display: flex;
+        color: #1b2850;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .statis-item {
+        font-size: 15px;
+        margin: 0 10px;
+    }
+
+    .contact .title div {
+        margin: auto;
+    }
+
+    .submit button {
+        width: 100px;
+        height: 35px;
+        background-color: #75cddd;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .button-action button {
+        width: 230px;
+        height: 55px;
+        background-color: #75cddd;
+        border: none;
+        margin-top: 35px;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .become-researcher .button-action button {
+        width: 230px !important;
+    }
+
+    .left-section {
+        padding: 40px;
+    }
+
+}
+
+@media (min-width: 300px) and (max-width: 424px) {
+    .statistics {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        color: #1b2850;
+    }
+
+    .statis-item {
+        font-size: 10px;
+        margin: 0 10px;
+    }
+
+    #menu a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .left-section {
+        padding: 40px;
+    }
+
+    .paper {
+        position: absolute;
+        bottom: 1px;
+        margin-bottom: 10px;
+        color: #1b2850;
+        right: 75px;
+        font-size: 15px;
+    }
+
+    .paper p {
+        font-size: 25px;
+    }
+
+    .social-paper {
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 50px 0;
+    }
+}

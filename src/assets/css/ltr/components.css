@@ -1,0 +1,216 @@
+h1 {
+    color: rgb(85, 57, 130);
+    text-align: center;
+    font-family: 'Geneva';
+    font-size: 3em;
+    font-weight: 600;
+    color: #1b2850;
+}
+
+.header {
+    height: 280px;
+    box-shadow: 10px 5px 5px #cac6c6;
+}
+
+.submit button {
+    width: 125px;
+    height: 50px;
+    background-color: #75cddd;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    align-items: right !important;
+}
+
+.button-action button {
+    width: 175px;
+    height: 70px;
+    background-color: #75cddd;
+    border: none;
+    margin-top: 35px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 180px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: #1b2850;
+}
+
+.become-researcher .button-action button {
+    width: 355px !important;
+}
+
+.login-register {
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    color: #1b2850;
+}
+
+.left-section button {
+    height: 65px;
+    width: 72px;
+    background-color: #1b2850;
+}
+
+.paper p {
+    font-size: 39px;
+    font-weight: bold;;
+}
+
+.left-section i {
+    color: #fff;
+    font-size: 25px;
+}
+
+
+.nav-collapsed a {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar {
+    height: 100%;
+    width: 100px;
+    background-color: #1b2850;
+    margin: 0 !important;
+    border-radius: 0;
+}
+
+#nav-toggle {
+    cursor: pointer;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-login {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    direction: rtl
+}
+
+.logo-left {
+    float: left;
+    padding: 44px 95px;
+}
+
+.logo-right {
+    float: right;
+    padding: 40px 95px;
+}
+
+
+.right-section {
+    color: black;
+    width: 50%;
+    height: 100%;
+}
+
+.left-section {
+    width: 50%;
+    height: 100%;
+    background-size: contain;
+    background-image: url("../../../assets/img/library.jpg");
+    padding: 219px 75px;
+}
+
+.social-paper {
+    padding: 200px 0px 74px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-paper img {
+    position: absolute;
+    right: 305px;
+    bottom: 55px;
+    width: 139px;
+}
+
+.box {
+    width: 190px;
+    height: 190px;
+    margin: 0 300px 2px 0;
+    background-color: #75cddd;
+}
+
+.research-title {
+    padding: 20px;
+    display: flex;
+    height: 225px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cards-items .c-item {
+    border: 1px solid #1b2850;
+    width: 32.5%;
+    margin: 10px 0;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.full-section .side {
+    width: 50%;
+}
+
+.research-input {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.drop-list {
+    display: inline-block;
+    float: left;
+    margin-right: 0px;
+    padding-left: 25px;
+    font-size: 20px;
+    position: relative;
+}
+
+.paper {
+    position: absolute;
+    bottom: -16px;
+    right: 265px;
+    color: #1b2850;
+}
+
+.become-researcher {
+    display: flex;
+    flex-direction: column;
+    padding: 45px 40px;
+}
+
+.contact h1 {
+    font-family: 'Geneva';
+    font-size: 3em;
+    font-weight: 600;
+    margin: 20px 0;
+    text-align: left;
+    color: #1b2850;
+}
+
+.heat-map .map {
+    display: flex;
+    color: #1b2850;
+    flex-direction: column;
+    padding: 0px 200px;
+}
+
+.full-section .sec-content {
+    padding: 10px 85px;
+    text-align: left;
+}
+
