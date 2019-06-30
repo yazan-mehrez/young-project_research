@@ -290,7 +290,7 @@
 </div>
 
 
-<div class="full-section">
+<div class="full-section contact">
     <div class="side">
         <div class="sec-img">
             <!--            <img src="assets/img/map.PNG">-->
@@ -310,29 +310,41 @@
     <div class="side">
         <div class="sec-content">
             <h1 class="text-left">Contact us</h1>
+            <div class="contact-info">
             <p>Email: info@arabyouthcenter.com</p>
             <p>Address: Dubai, X Building 9th floo</p>
             <p>Contact Number: 04 123 4567</p>
+            </div>
             <div class="title">
                 <p>Enquiry</p>
                 <div></div>
+            </div>
+            <div class="full-section form-input">
+                <form class="example-form" [formGroup]="myForm">
+                    <div class="item">
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Name" formControlName="food">
+                        </mat-form-field>
+                    </div>
+                    <div class="item">
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Email Address" formControlName="comment">
+                        </mat-form-field>
+                    </div>
+                    <div class="item">
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Phone Number" formControlName="comment">
+                        </mat-form-field>
+                    </div>
+                    <div class="item">
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Message" formControlName="comment">
+                        </mat-form-field>
+                    </div>
+                </form>
             </div>
 
         </div>
     </div>
 </div>
 
-<div class="full-section form-input">
-    <form class="example-form" [formGroup]="myForm">
-        <div class="item">
-            <mat-form-field class="example-full-width">
-                <input matInput placeholder="Favorite food" formControlName="food">
-            </mat-form-field>
-        </div>
-        <div class="item">
-            <mat-form-field class="example-full-width">
-                <input matInput placeholder="Leave a comment" formControlName="comment">
-            </mat-form-field>
-        </div>
-    </form>
-</div>

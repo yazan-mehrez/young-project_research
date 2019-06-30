@@ -728,7 +728,7 @@ img {
 
 }
 
-
+/* contact us*/
 .map-container-4{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -766,7 +766,6 @@ img {
 }
 
 .form-input .item {
-    font-size: 30px;
     width: 300px;
 }
 
@@ -790,5 +789,51 @@ img {
 ::ng-deep .form-input .mat-form-field-ripple {
     background-color: #75cddd !important;
 }
+
+.contact {
+    margin: 20px 0 !important;
+}
+
+/*.contact .full-section {*/
+/*    position: relative;*/
+/*    background: #f1f2f2;*/
+/*    margin: 0;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    width: 100%;*/
+/*}*/
+
+.contact .title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact .title div {
+    border: 13px solid #75cddd;
+    background-color: #75cddd;
+    width: 115px;
+}
+
+ .contact h1 {
+    color: rgb(85, 57, 130);
+    font-family: 'Geneva';
+    font-size: 3em;
+    font-weight: 600;
+    margin: 20px 0;
+     text-align: left;
+}
+
+.contact .full-section {
+    position: relative;
+    background: #f1f2f2;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.contact-info p{ font-size: 18px;}
+
 
 
