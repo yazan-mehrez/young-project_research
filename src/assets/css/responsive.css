@@ -1,0 +1,21 @@
+
+@media (min-width: 1600px) {
+
+
+}
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+    .nav-block {
+        display: inline-grid;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0 0 0 5%;
+    }
+
+
+    .research-search {
+        height: 9px;
+        width: 95%;
+    }
+}
+
