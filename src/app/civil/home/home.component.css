@@ -134,6 +134,7 @@
 }
 
 
+
 .navbar-login div {
     margin: 0 10px;
 }
@@ -279,7 +280,7 @@ input {
     padding: 45px 40px;
 }
 
-.title-search {
+.title-search{
     display: flex;
     justify-content: space-between;
 }
@@ -300,12 +301,13 @@ input {
 }
 
 
-.research-search {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: right;
-    padding: 20px;
+
+.research-search{
+display: flex;
+flex-direction: column;
+width: 100%;
+text-align: right;
+padding: 20px;
 }
 
 .title {
@@ -545,12 +547,12 @@ img {
 }
 
 
-.cards-items {
+.cards-items{
     display: flex;
     justify-content: space-between;
 }
 
-.cards-items .c-item {
+.cards-items .c-item{
     border: 1px solid #1b2850;
     width: 32.5%;
     margin: 10px 0;
@@ -558,19 +560,20 @@ img {
     flex-wrap: wrap;
 }
 
-.cards-items .bookmark {
+.cards-items .bookmark{
     text-align: right;
     position: relative;
     top: -35px;
     font-size: 35px;
 }
 
-.cards-items h3 {
+.cards-items h3{
     margin-top: -35px;
 }
 
 
-.research-search input {
+
+.research-search input{
     height: 35px;
 }
 
@@ -584,15 +587,15 @@ img {
     justify-content: flex-end;
 }
 
-.research-search .navigator {
-    margin-bottom: 30px !important;
+.research-search  .navigator {
+    margin-bottom: 30px  !important;
 }
 
-.button-action {
+.button-action{
     text-align: center
 }
 
-.button-action button {
+.button-action button{
     width: 175px;
     height: 70px;
     background-color: #75cddd;
@@ -652,13 +655,13 @@ img {
 
 /*become researcher*/
 
-.become-researcher {
+.become-researcher{
     display: flex;
     flex-direction: column;
     padding: 45px 40px;
 }
 
-.cards {
+.cards{
     display: flex;
     color: #1b2850;
     justify-content: space-between;
@@ -674,7 +677,7 @@ img {
     text-align: center;
 }
 
-.card-item img {
+.card-item img{
     width: 45%;
 }
 
@@ -693,11 +696,58 @@ img {
     margin-left: 22%;
 }
 
+/*heat map*/
 
-/*.register-member {*/
-/*    text-align: center;*/
-/*    margin-top: 30px;*/
-/*}*/
+
+.heat-map{
+    display: flex;
+    flex-direction: column;
+    padding: 45px 40px;
+}
+
+
+.heat-map .map {
+    display: flex;
+    color: #1b2850;
+    flex-direction: column;
+    padding: 0px 200px;
+}
+
+.map img{
+    width: 100%;
+    height: 100%;
+}
+
+.statistics{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 180px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+.map-container-4{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height: 100%  !important;
+    width: 100%;
+}
+.map-container-4 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+.sec-img{
+    height: 100%;
+}
 
 .with-slider .main-slider {
     display: flex;
