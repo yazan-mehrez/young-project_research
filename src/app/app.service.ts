@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import {BehaviorSubject} from 'rxjs';
+import * as AOS from 'aos';
 
 @Injectable({
     providedIn: 'root'
@@ -17,6 +18,12 @@ export class AppService {
         const browserLang = localStorage.getItem('language');
         translate.setDefaultLang(browserLang.match(/en|ar/) ? browserLang : 'en');
         this.language.next(browserLang);
+
+        /** Animations Trigger **/
+        AOS.init({
+            disable: window.outerWidth < 376,
+            useClassNames: window.outerWidth > 375
+        });
     }
 
     /* Switch Language */

@@ -31,6 +31,8 @@ export class HomeComponent implements OnInit {
         this.myForm = fb.group({
             'food': [null, Validators.required],
             'comment': [null, Validators.required],
+            'phone': [null, Validators.required],
+            'message': [null, Validators.required],
         });
     }
 

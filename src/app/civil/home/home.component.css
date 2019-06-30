@@ -104,6 +104,7 @@
 
 .right-section {
     display: inline-block;
+    overflow: hidden;
 }
 
 /* Bootstrap 4 text input with search icon */
