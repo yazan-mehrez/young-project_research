@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import {AppService} from '../../app.service';
 import {fadeInOut} from '../../../animations/fadeInOut';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
     selector: 'app-home',
@@ -11,6 +12,8 @@ import {fadeInOut} from '../../../animations/fadeInOut';
 })
 export class HomeComponent implements OnInit {
     collapsed = false;
+    myForm: FormGroup;
+
     itemIndex = 0;
     dataList = [
         {
@@ -22,7 +25,13 @@ export class HomeComponent implements OnInit {
             text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad asperiores atque cumque dignissimos doloremque ducimus eligendi excepturi iusto, minus nemo neque nostrum quae, qui quis quod ratione rem tenetur.'
         }];
 
-    constructor(private translateService: TranslateService, private _appService: AppService) {
+    constructor(private translateService: TranslateService,
+                private _appService: AppService,
+                private fb: FormBuilder) {
+        this.myForm = fb.group({
+            'food': [null, Validators.required],
+            'comment': [null, Validators.required],
+        });
     }
 
     next() {

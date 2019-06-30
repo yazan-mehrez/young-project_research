@@ -715,3 +715,29 @@ img {
     cursor: pointer;
 }
 
+.form-input .item {
+    font-size: 30px;
+    width: 300px;
+}
+
+.form-input .mat-form-field {
+    width: 100%;
+}
+
+.form-input .item input {
+    height: 30px;
+}
+
+::ng-deep .form-input .mat-form-field-underline {
+    background-color: #75cddd !important;
+    height: 3px !important;
+}
+
+::ng-deep .form-input .mat-form-field-invalid .mat-form-field-underline {
+    background-color: #f44336 !important;
+}
+
+::ng-deep .form-input .mat-form-field-ripple {
+    background-color: #75cddd !important;
+}
+
