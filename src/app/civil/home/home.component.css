@@ -208,7 +208,7 @@ input {
 .social-paper img {
     position: absolute;
     right: 305px;
-    bottom: 162px;
+    bottom: 55px;
     width: 139px;
 }
 
@@ -222,8 +222,9 @@ input {
 
 .paper {
     position: absolute;
-    bottom: 60px;
+    bottom: -16px;
     right: 265px;
+    color: #1b2850;
 }
 
 
@@ -304,16 +305,17 @@ input {
 
 
 .research-search{
-display: flex;
-flex-direction: column;
-width: 100%;
-text-align: right;
-padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: right;
+    padding: 20px;
 }
 
 .title {
     font-size: 45px;
     font-weight: bold;
+    color: #1b2850;
 
 }
 
@@ -529,6 +531,7 @@ h1 {
     font-family: 'Geneva';
     font-size: 3em;
     font-weight: 600;
+    color: #1b2850;
 }
 
 img {
@@ -575,7 +578,13 @@ img {
 
 
 .research-search input{
-    height: 35px;
+    height: 33px;
+}
+
+.research-input button{
+    margin-left: 0 !important;
+    background-color: #1b2850;
+    color: #fff;
 }
 
 .research-search .row {
@@ -612,7 +621,6 @@ img {
 .full-section {
     position: relative;
     background: #f1f2f2;
-    margin: 50px 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -726,6 +734,7 @@ img {
     font-size: 22px;
     font-weight: bold;
     text-align: center;
+    color: #1b2850;
 
 }
 
@@ -767,7 +776,7 @@ img {
 }
 
 .form-input .item {
-    width: 300px;
+    width: 100%;
 }
 
 .form-input .mat-form-field {
@@ -795,18 +804,10 @@ img {
     margin: 20px 0 !important;
 }
 
-/*.contact .full-section {*/
-/*    position: relative;*/
-/*    background: #f1f2f2;*/
-/*    margin: 0;*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    width: 100%;*/
-/*}*/
-
 .contact .title {
     font-size: 30px;
     font-weight: bold;
+    color: #1b2850;
 }
 
 .contact .title div {
@@ -815,13 +816,14 @@ img {
     width: 115px;
 }
 
- .contact h1 {
+.contact h1 {
     color: rgb(85, 57, 130);
     font-family: 'Geneva';
     font-size: 3em;
     font-weight: 600;
     margin: 20px 0;
-     text-align: left;
+    text-align: left;
+    color: #1b2850;
 }
 
 .contact .full-section {
@@ -835,6 +837,28 @@ img {
 }
 
 .contact-info p{ font-size: 18px;}
+
+
+
+
+.submit {
+    text-align: right;
+}
+
+.submit button {
+    width: 125px;
+    height: 50px;
+    background-color: #75cddd;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    align-items: right !important;
+}
+
+
+.example-form {
+    width: 100%;
+}
 
 
 
