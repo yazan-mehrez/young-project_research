@@ -3,6 +3,8 @@ import {RouterModule, Routes} from '@angular/router';
 import {CommonModule} from '@angular/common';
 import {CivilComponent} from './civil/civil.component';
 import {HomeComponent} from './civil/home/home.component';
+import {RegisterComponent} from './civil/register/register.component';
+import {ProfileComponent} from './civil/profile/profile.component';
 
 const routes: Routes = [
     {
@@ -12,8 +14,24 @@ const routes: Routes = [
             {
                     path: 'home',
                 component: HomeComponent
-            }
-        ]
+            },
+
+            {
+                path: 'register',
+                component: RegisterComponent
+            },
+            {
+                path: 'profile',
+                component: ProfileComponent
+            },
+            {
+                path: '',
+                redirectTo: '/home',
+                pathMatch: 'full'
+            },
+
+
+            ]
     },
     {
         path: '**',

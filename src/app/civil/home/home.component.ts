@@ -17,8 +17,14 @@ export class HomeComponent implements OnInit {
     itemIndex = 0;
     dataList = [
         {
-            photo: 'assets/img/library.jpg',
-            text: 'Filler text is text that shares some characteristics of a real written text, but is random or otherwise generated. It may be used to display a sample of fonts, generate text for testing, or to spoof an e-mail spam filter.'
+            photo: 'assets/img/research.jpg',
+            text: '”Lorem ipsum dolor sit amet,\n' +
+                'consectetuer adipiscing elit, sed diam\n' +
+                'nonummy nibh euismod tincidunt ut laoreet\n' +
+                'dolore magna aliquam erat volutpat. Ut wisi\n' +
+                'enim ad minim veniam, quis nostrud exerci\n' +
+                'tation ullamcorper suscipit lobortis nisl ut\n' +
+                'aliquip ex ea commodo consequat.„\n'
         },
         {
             photo: 'assets/img/img223.jpg',

@@ -25,6 +25,8 @@ import {FormsExamplesComponent} from '../elements/forms-examples/forms-examples.
 import {CaptchaComponent} from '../elements/captcha/captcha.component';
 import {AppSwiperComponent} from '../elements/app-swiper/app-swiper.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { RegisterComponent } from './civil/register/register.component';
+import { ProfileComponent } from './civil/profile/profile.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     direction: 'horizontal',
@@ -44,7 +46,9 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
         BreadcrumbComponent,
         CaptchaComponent,
         AppSwiperComponent,
-        FormsExamplesComponent
+        FormsExamplesComponent,
+        RegisterComponent,
+        ProfileComponent
     ],
     imports: [
         BrowserModule,

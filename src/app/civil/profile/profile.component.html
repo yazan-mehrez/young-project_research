@@ -1,0 +1,202 @@
+<div class="nav-collapsed" *ngIf="collapsed">
+    <a>Home Page</a>
+    <a>Research Paper</a>
+    <a>About Us</a>
+    <a>How to Become a Researcher</a>
+    <a>Our Members</a>
+    <a>Heat Map</a>
+    <a>Contact Us</a>
+</div>
+
+<div class="profile-container">
+    <div class="left-sticker"></div>
+    <div class="center-sticker"></div>
+    <div class="profile-photo" data-aos="fade-right" data-aos-duration="1000">
+        <img src="assets/img/member1.jpg" alt="">
+    </div>
+    <div class="right-section">
+        <div class="navbar-login">
+            <div class="navbar"
+                 [style.z-index]="collapsed ? '550' : ''"
+                 [style.background-color]="collapsed ? '#fff' : ''">
+                <a id="nav-toggle" [ngClass]="collapsed ? 'active' : ''" (click)="collapsed = !collapsed">
+                    <span [style.color]="collapsed ? '#1b2850' : ''"></span>
+                </a>
+            </div>
+
+        </div>
+        <div class="social-info">
+        <div class="info-user">
+            <div class="user-name">
+                <div class="full-name">
+                    <div class="title">
+                        <p>Ghina sallit</p>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                          <div class="box">
+                          </div>
+                          <img src="assets/img/paper.png" alt="">
+                          <div class="paper"><p>Submit A Paper</p></div>
+                </div>
+            </div>
+            <div class="desc-user">
+                Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat
+                volutpat. Ut wisi enim ad minim veniam, quis
+                nostrud exerci tation ullamcorper suscipit lobortis
+                nisl ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="info">
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa fa-map-marker"></i>
+                        <div class="info-data">Syria - Homs</div>
+                    </div>
+                    <div class="info-icon">
+                        <i class="fa fa-map-marker"></i>
+                        <div class="info-data">Syria - Homs</div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa fa-map-marker"></i>
+                        <div class="info-data">Syria - Homs</div>
+                    </div>
+                    <div class="info-icon">
+                        <i class="fa fa-map-marker"></i>
+                        <div class="info-data">Syria - Homs</div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa fa-map-marker"></i>
+                        <div class="info-data">Syria - Homs</div>
+                    </div>
+                    <div class="info-icon">
+                        <i class="fa fa-map-marker"></i>
+                        <div class="info-data">Syria - Homs</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="social">
+            <div><i class="fa fa-facebook"></i></div>
+            <div><i class="fa fa-instagram"></i></div>
+            <div><i class="fa fa-twitter"></i></div>
+            <div><i class="fa fa-youtube"></i></div>
+        </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="research-section" data-aos="fade-down" data-aos-duration="100">
+    <div class="title-search">
+        <div class="research-title">
+            <div class="title">
+                <p>Research Papers</p>
+                <div>
+                </div>
+            </div>
+        </div>
+        <div class="research-search">
+            <!--<div class="rsearch">-->
+            <div class="navigator">
+                <div class="nav-block">
+                    <!-- navbar only -->
+                    <!-- invoke the collapsed menu button for smallviewports -->
+                    <label for="show-menu" class="show-menu"><span class="grow">&nbsp;&nbsp;<i class="fas fa-bars">&nbsp;&darr;&nbsp;</i></span></label>
+
+                    <input type="checkbox" id="show-menu" role="button">
+                    <div id="menu">
+                        <div class="drop-list" dropdown>
+                            <!-- Use unicode &#x25BC; for dropdown tringle--->
+                            <a dropdownToggle>Discipline <span>&#x25BE;</span></a>
+                            <div *dropdownMenu role="menu" class="dropdown-menu text-center">
+                                <div class="pt-2 pb-2"><a href="/mission">Mission</a></div>
+                                <div class="pt-2 pb-2"><a href="/purpose">Purpose</a></div>
+                                <div class="pt-2 pb-2"><a href="/leadership">Leadership</a></div>
+                            </div>
+                        </div>
+                        <div class="drop-list"><a>Country</a></div>
+                        <div class="drop-list" dropdown>
+                            <a dropdownToggle>Language <span>&#x25BE;</span> </a>
+                            <div *dropdownMenu role="menu" class="dropdown-menu text-center">
+                                <div class="pt-2 pb-2"><a href="/showcase">Showcase</a></div>
+                                <div class="pt-2 pb-2"><a href="/scholarship">Scholarship</a></div>
+                                <div class="pt-2 pb-2"><a href="/testimonials">Testimonials</a></div>
+                            </div>
+                        </div>
+                        <div class="drop-list"><a>Year</a></div>
+                    </div>
+                </div><!--nav-block-->
+            </div>
+            <div class="col-lg-12 research-input">
+                <div class="row">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><i class="fa fa-search"
+                                                                                 aria-hidden="true"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!--</div>-->
+
+        </div>
+    </div>
+    <div class="cards-items">
+        <div class="c-item" data-aos="fade-up" data-aos-duration="500">
+            <div class="bookmark">
+                <i class="fa fa-bookmark-o"></i>
+            </div>
+            <h3>Environmental health: How our
+                food choices is affecting the earth.</h3>
+            <div class="blue-sep"></div>
+            <div>
+                Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna
+            </div>
+        </div>
+        <div class="c-item" data-aos="fade-up" data-aos-duration="1000">
+            <div class="bookmark">
+                <i class="fa fa-bookmark-o"></i>
+            </div>
+            <h3>Environmental health: How our
+                food choices is affecting the earth.</h3>
+            <div class="blue-sep"></div>
+            <div>
+                Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna
+            </div>
+        </div>
+        <div class="c-item" data-aos="fade-up" data-aos-duration="1500">
+            <div class="bookmark">
+                <i class="fa fa-bookmark-o"></i>
+            </div>
+            <h3>Environmental health: How our
+                food choices is affecting the earth.</h3>
+            <div class="blue-sep"></div>
+            <div>
+                Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna
+            </div>
+        </div>
+    </div>
+    <div class="button-action">
+        <button>View more</button>
+    </div>
+</div>
