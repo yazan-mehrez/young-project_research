@@ -5,6 +5,7 @@ import {CivilComponent} from './civil/civil.component';
 import {HomeComponent} from './civil/home/home.component';
 import {RegisterComponent} from './civil/register/register.component';
 import {ProfileComponent} from './civil/profile/profile.component';
+import {UploadPaperComponent} from './civil/upload-paper/upload-paper.component';
 
 const routes: Routes = [
     {
@@ -23,6 +24,10 @@ const routes: Routes = [
             {
                 path: 'profile',
                 component: ProfileComponent
+            },
+            {
+                path: 'upload-paper',
+                component: UploadPaperComponent
             },
             {
                 path: '',

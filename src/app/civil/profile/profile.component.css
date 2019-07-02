@@ -52,20 +52,46 @@
     justify-content: space-between;
 }
 
-/*.social-paper img {*/
-/*    position: absolute;*/
-/*    right: 305px;*/
-/*    bottom: 55px;*/
-/*    width: 139px;*/
-/*}*/
+
+.user-name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    position: relative;
+    width: 60px;
+    height: 60px;
+     margin: 0;
+    background-color: #75cddd;
+}
+
+.info-user img{
+    position: absolute;
+    width: 45px;
+    right: 190px;
+    top: 168px;
+}
+
+.paper{
+    position: absolute;
+    top: 230px;
+    right: 145px;
+    color: #1b2850;
+}
 
 
-/*.paper {*/
-/*    position: absolute;*/
-/*    bottom: -16px;*/
-/*    right: 265px;*/
-/*    color: #1b2850;*/
-/*}*/
+.paper p {
+    font-size: 39px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+
+
+
 
 
 

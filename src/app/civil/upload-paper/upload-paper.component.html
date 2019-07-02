@@ -1,0 +1,62 @@
+<div class="nav-collapsed" *ngIf="collapsed">
+  <a>Home Page</a>
+  <a>Research Paper</a>
+  <a>About Us</a>
+  <a>How to Become a Researcher</a>
+  <a>Our Members</a>
+  <a>Heat Map</a>
+  <a>Contact Us</a>
+</div>
+<div class="full-section upload-file" data-aos-duration="1000">
+  <div class="side">
+    <div class="sec-img">
+      <img src="assets/img/research.jpg" alt="">
+    </div>
+  </div>
+  <div class="side">
+    <div class="navbar-login">
+      <div class="navbar"
+           [style.z-index]="collapsed ? '550' : ''"
+           [style.background-color]="collapsed ? '#fff' : ''">
+        <a id="nav-toggle" [ngClass]="collapsed ? 'active' : ''" (click)="collapsed = !collapsed">
+          <span [style.color]="collapsed ? '#1b2850' : ''"></span>
+        </a>
+      </div>
+      <div class="log-out">
+        <div class="lang">العربية</div>
+        <div>Log out</div>
+      </div>
+    </div>
+    <div class="sec-content">
+      <div class="title">
+        <p>Upload Papers</p>
+        <div></div>
+      </div>
+      <div class="full-section form-input">
+        <form class="example-form" [formGroup]="myForm">
+
+          <div class="item">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Title" formControlName="comment">
+            </mat-form-field>
+          </div>
+          <div class="item">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Description" formControlName="phone">
+            </mat-form-field>
+          </div>
+          <div class="item">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Tags" formControlName="message">
+            </mat-form-field>
+          </div>
+          <div class="submit">
+            <button>Choose File</button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>

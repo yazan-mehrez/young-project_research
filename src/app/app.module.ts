@@ -27,6 +27,7 @@ import {AppSwiperComponent} from '../elements/app-swiper/app-swiper.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { RegisterComponent } from './civil/register/register.component';
 import { ProfileComponent } from './civil/profile/profile.component';
+import { UploadPaperComponent } from './civil/upload-paper/upload-paper.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     direction: 'horizontal',
@@ -48,7 +49,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
         AppSwiperComponent,
         FormsExamplesComponent,
         RegisterComponent,
-        ProfileComponent
+        ProfileComponent,
+        UploadPaperComponent
     ],
     imports: [
         BrowserModule,
