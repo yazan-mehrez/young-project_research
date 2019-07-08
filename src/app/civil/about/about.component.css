@@ -1,40 +1,4 @@
 
-.sec-img {
-    height: 100%;
-}
-
-
-.upload-file img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.form-input .item {
-    width: 100%;
-}
-
-.form-input .mat-form-field {
-    width: 100%;
-}
-
-.form-input .item input {
-    height: 30px;
-}
-
-
-.upload-file .title {
-    font-size: 30px;
-    font-weight: bold;
-    color: #1b2850;
-}
-
-
-.login-register div{
-    margin: 0 25px;
-
-}
-
 /*navBar*/
 .nav-collapsed {
     height: 100%;
@@ -107,57 +71,102 @@
 /* end navbar*/
 
 
-.upload-file .title div {
-    border: 13px solid #75cddd;
-    background-color: #75cddd;
-    width: 115px;
-}
-
-
-.upload-file .full-section {
-    position: relative;
-    background: #f1f2f2;
-    margin: 15px 0;
+.top-home {
+    height: 100%;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     width: 100%;
-
+    background-color: #f1f2f2;
 }
+
+
+
+.navbar-login div {
+    margin: 0 10px;
+}
+
+.social {
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 35px;
+}
+
+.social div {
+    display: block;
+}
+
+
+.social i {
+    font-size: 25px;
+    color: #1b2850;
+    margin-bottom: 16px;
+}
+
+
+
+/*about arab section*/
 
 .full-section {
     position: relative;
-
     background: #f1f2f2;
+    /*margin: 50px 0;*/
     display: flex;
     justify-content: space-between;
     width: 100%;
 
 }
 
-.upload-file-info p {
-    font-size: 18px;
-}
-
-
-.example-form {
+.full-section .sec-img img {
     width: 100%;
+    padding: 0;
+    object-fit: cover;
 }
 
 
-.submit {
-    text-align: center;
-    height: 70px;
-    margin: 20px 0 10px 0;
+.full-section .left-sticker {
+    height: 155px;
+    width: 50px;
+    position: absolute;
+    background: orange;
+    left: 5%;
+    z-index: 100;
+}
+
+.full-section .center-sticker {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background: #1b2850;
+    top: 45%;
+    left: 47%;
+    bottom: 50%;
+    right: 50%;
+    z-index: 100;
+}
+
+.img{
+    object-fit: cover;
+}
+
+
+.sec-content{
     display: flex;
-
+    justify-content: space-around;
+    padding-top: 45px;
 }
 
-.submit button {
-    width: 100%;
-    height: 100%;
-    background-color: #75cddd;
-    border: none;
-    color: #fff;
-    font-size: 35px;
+
+.about-content{
+    padding: 10px 85px;
 }
 
+.about-content .text-left p{
+    font-size: 65px;
+}
+
+
+.full-section .sec-content {
+     padding: 0;
+    text-align: left;
+}

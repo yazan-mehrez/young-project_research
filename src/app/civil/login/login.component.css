@@ -1,10 +1,14 @@
 
+.register{
+    height: 670px;
+}
+
 .sec-img {
     height: 100%;
 }
 
 
-.upload-file img {
+.register img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -23,17 +27,12 @@
 }
 
 
-.upload-file .title {
+.register .title {
     font-size: 30px;
     font-weight: bold;
     color: #1b2850;
 }
 
-
-.login-register div{
-    margin: 0 25px;
-
-}
 
 /*navBar*/
 .nav-collapsed {
@@ -107,14 +106,14 @@
 /* end navbar*/
 
 
-.upload-file .title div {
+.register .title div {
     border: 13px solid #75cddd;
     background-color: #75cddd;
     width: 115px;
 }
 
 
-.upload-file .full-section {
+.register .full-section {
     position: relative;
     background: #f1f2f2;
     margin: 15px 0;
@@ -134,7 +133,7 @@
 
 }
 
-.upload-file-info p {
+.register-info p {
     font-size: 18px;
 }
 
@@ -143,6 +142,11 @@
     width: 100%;
 }
 
+.item-full-name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
 .submit {
     text-align: center;
@@ -151,6 +155,7 @@
     display: flex;
 
 }
+
 
 .submit button {
     width: 100%;
@@ -161,3 +166,19 @@
     font-size: 35px;
 }
 
+
+.first-name {
+    margin-right: 70px;
+}
+
+.go-login {
+    display: flex;
+}
+
+.go-login p {
+    font-size: 20px;
+}
+
+.forget-password{
+    text-align: right;
+}
