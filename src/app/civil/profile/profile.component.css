@@ -38,7 +38,7 @@
 .info-icon{
     width: 50%;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 
 }
 

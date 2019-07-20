@@ -1,12 +1,13 @@
 .profile-info{
     width: 800px;
+    /*set auto*/
     height: 535px;
     background-color: #F1F2F2;
 
 
 }
 
-.mat-dialog-container {
+::ng-deep .mat-dialog-container {
     background: #F1F2F2 !important;
 
 
@@ -67,6 +68,8 @@
 
 .example-full-width {
     width: 75%;
+    padding: 0 !important;
+    border-top: none !important;
 }
 
 
@@ -106,8 +109,7 @@
 
 
 .mat-form-field-infix {
-     padding: 0 !important;
-     border-top: none !important;
+
 }
 
 
@@ -148,7 +150,7 @@
     background-color: #FFF
 }
 
-.file-input img{
+.image-upload img{
     width: 27px;
     height: 22px;
 }
@@ -158,3 +160,13 @@
 }
 
 
+.close-dialog{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    background: #1B2850;
+}
+
+.close-desc{
+    display: flex;
+}
