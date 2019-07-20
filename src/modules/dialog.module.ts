@@ -4,19 +4,22 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
     MatButtonModule,
     MatCardModule,
-    MatDialogModule,
-    MatIconModule,
+    MatDialogModule, MatFormFieldModule,
+    MatIconModule, MatInputModule,
     MatMenuModule,
+    MatSelectModule,
     MatToolbarModule
 } from '@angular/material';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserModule} from "@angular/platform-browser";
 import {TranslateModule} from '@ngx-translate/core';
+import {ProfileInfoComponent} from '../app/dialogs/profile-info/profile-info.component';
 
 @NgModule({
-    declarations: [],
-    entryComponents: [],
+    declarations: [ProfileInfoComponent],
     imports: [
+        MatFormFieldModule,
+        MatInputModule,
         TranslateModule,
         CommonModule,
         BrowserModule,
@@ -27,6 +30,13 @@ import {TranslateModule} from '@ngx-translate/core';
         MatIconModule,
         MatCardModule,
         MatDialogModule,
+
+        MatSelectModule,
+        ReactiveFormsModule,
+
+    ],
+    entryComponents: [
+        ProfileInfoComponent
     ],
     exports: [
         MatButtonModule,

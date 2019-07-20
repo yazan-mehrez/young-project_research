@@ -1,0 +1,55 @@
+<div class="profile-info">
+    <form class="full-section profile-form example-form" [formGroup]="profileForm">
+        <div class="info-left-section example-form">
+            <div class="avatar"><img src="assets/img/avatar_default.PNG" alt=""></div>
+            <div class="image-upload">
+                <label for="file-input">
+                    <img src="assets/img/camera.PNG"/>
+                </label>
+                <input id="file-input" type="file" />
+            </div>
+            <div class="title">
+                <p>Ghina Sallit!</p>
+                <div></div>
+            </div>
+            <div>
+
+            <mat-form-field>
+
+                <mat-select>
+                   <mat-option value="option">Option</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="" value="">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="" value="">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="" value="">
+            </mat-form-field>
+            </div>
+        </div>
+
+
+        <div class="info-right-section">
+            <div class="title">
+                <p>Description</p>
+                <div></div>
+            </div>
+            <div>
+                <textarea class="textbox-lines" rows="6"></textarea>
+            </div>
+            <div class="submit">
+                <button>Save Your Profile info</button>
+            </div>
+            <div class="profile-skip">
+                <a>Go to profile</a><span>!</span><a>Skip for now.</a>
+
+            </div>
+        </div>
+    </form>
+
+</div>
+

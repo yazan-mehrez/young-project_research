@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import {BehaviorSubject} from 'rxjs';
 import * as AOS from 'aos';
+import {DataService} from '../services/data.service';
 
 @Injectable({
     providedIn: 'root'
@@ -10,7 +11,7 @@ export class AppService {
     public language = new BehaviorSubject<string>(null);
     currentLanguage: string;
 
-    constructor(private translate: TranslateService) {
+    constructor(private translate: TranslateService , public api: DataService) {
         /** Language Configurations **/
         if (!localStorage.getItem('language')) {
             localStorage.setItem('language', 'en');

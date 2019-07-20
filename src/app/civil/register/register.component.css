@@ -109,23 +109,18 @@
 }
 
 
-.register .full-section {
-    position: relative;
-    background: #f1f2f2;
-    margin: 15px 0;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
+.register {
+    height: 834px;
 }
 
 .full-section {
     position: relative;
-
-    background: #f1f2f2;
+    background: #F1F2F2;
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+
 
 }
 
@@ -152,6 +147,10 @@
 
 }
 
+
+.mat-form-field--no-underline .mat-form-field-underline {
+    background-color: transparent !important;
+}
 
 .submit button {
     width: 100%;

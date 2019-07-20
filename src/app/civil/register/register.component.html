@@ -29,34 +29,37 @@
         <div></div>
       </div>
       <div class="full-section form-input">
-        <form class="example-form" [formGroup]="myForm">
+        <form class="example-form" [formGroup]="registerForm">
           <div class="item-full-name">
             <mat-form-field class="example-full-width first-name">
-              <input matInput placeholder="First Name" formControlName="food">
+              <input matInput placeholder="First Name" formControlName="f_name">
             </mat-form-field>
             <mat-form-field class="example-full-width last-name">
-              <input matInput placeholder="Last Name" formControlName="food">
+              <input matInput placeholder="Last Name" formControlName="l_name">
             </mat-form-field>
           </div>
           <div class="item">
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="Email Address" formControlName="comment">
+              <input matInput placeholder="Email Address" formControlName="email">
             </mat-form-field>
           </div>
+            <div class="item">
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="User Name" formControlName="username">
+              </mat-form-field>
+            </div>
           <div class="item">
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="User Name" formControlName="phone">
-            </mat-form-field>
-          </div>
-          <div class="item">
-            <mat-form-field class="example-full-width">
-              <input matInput placeholder="Password" formControlName="message">
+              <input matInput placeholder="Password" formControlName="password">
             </mat-form-field>
           </div>
           <div class="submit">
-            <button>Register</button>
+            <button (click)="openDialog()" >Register</button>
+<!--            <input type="file" class="form-control" class="dropify" formControlName="File" #File>-->
+<!--            <button type="submit" class="btn btn-default" (click)="upload(File.value)" >Submit</button>-->
+
           </div>
-          <div class="go-login"><P>Already have an account?</P><a>Login</a></div>
+          <div class="go-login"><P>Already have an account?</P><a>Register</a></div>
         </form>
       </div>
 

@@ -2,6 +2,7 @@ import {Injectable, isDevMode} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
+import {User} from '../classes/user';
 
 @Injectable({
     providedIn: 'root'
@@ -15,7 +16,7 @@ export class ApiService {
 
     public getAbsoluteDomainUrl(): string {
         if (isDevMode()) {
-            this.apiURL = 'http://demoserver.tacme.net:3030/';
+            this.apiURL = 'http://localhost/geo/api/api.php';
         } else {
             if (window
                 && 'location' in window
@@ -27,17 +28,41 @@ export class ApiService {
         return null;
     }
 
-    // getNavBar(data, ServiceName: string, Type: string): Observable<Object> {
-    //     const headers = new HttpHeaders();
-    //     const lang = localStorage.getItem('language') === 'en' ? 1 : 2;
-    //     headers.append('Content-Type',
-    //         'application/x-www-form-urlencoded;charset=utf-8');
-    //     return this.http.get(
-    //         this.apiURL + 'TawseelTacsoft/Services/'
-    //         + ServiceName + '/' + Type + '?WebsiteID=1&LanguageID='
-    //         + lang + '&uniqueName=' + data, {
-    //             headers: headers
-    //         }).pipe(map(res => res));
-    // }
+    registerPage(func , data): Observable<Object> {
+        let headers = new HttpHeaders();
+        const lang = localStorage.getItem('language') === 'en' ? 1 : 2;
+        headers = headers.set('Content-Type', 'application/x-www-form-urlencoded;charset=utf-8')
+            .set('Accept-Language', 'ar')
+            .set('Authorization', '12345')
+            .set('Platform', '1')
+            .set('Os-Version', '1')
+            .set('Mobile-Brand', '1')
+            .set('App-Version', '1');
+        console.log(headers);
+        return this.http.post(
+            this.apiURL + '?function=' + func
+            , JSON.stringify(data), {
+                headers: headers
+            }).pipe(map(res => res));
+    }
+
+
+    uploadImagePage(func , data: FormData): Observable<any> {
+        let headers = new HttpHeaders();
+        const lang = localStorage.getItem('language') === 'en' ? 1 : 2;
+        headers = headers.set('Accept-Language', 'ar')
+            .set('Accept', 'application/json')
+            .set('Authorization', '12345')
+            .set('Platform', '1')
+            .set('Os-Version', '1')
+            .set('Mobile-Brand', '1')
+            .set('App-Version', '1');
+
+        return this.http.post(
+            this.apiURL + '?function=' + func
+            , data, {
+                headers: headers
+            }).pipe(map(res => res));
+    }
 
 }
