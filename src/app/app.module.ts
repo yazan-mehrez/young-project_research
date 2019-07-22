@@ -12,7 +12,7 @@ import {MatCardModule, MatFormFieldModule, MatInputModule} from '@angular/materi
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SafePipe} from '../pipes/safeURLs.pipe';
 import {SWIPER_CONFIG, SwiperConfigInterface, SwiperModule} from 'ngx-swiper-wrapper';
-import {BsDatepickerModule, BsDropdownMenuDirective, DatepickerModule} from 'ngx-bootstrap';
+import {BsDatepickerModule, DatepickerModule} from 'ngx-bootstrap';
 import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
 import {NgProgressHttpModule} from '@ngx-progressbar/http';
 import {NgProgressModule} from '@ngx-progressbar/core';
@@ -25,13 +25,14 @@ import {FormsExamplesComponent} from '../elements/forms-examples/forms-examples.
 import {CaptchaComponent} from '../elements/captcha/captcha.component';
 import {AppSwiperComponent} from '../elements/app-swiper/app-swiper.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { RegisterComponent } from './civil/register/register.component';
-import { ProfileComponent } from './civil/profile/profile.component';
-import { UploadPaperComponent } from './civil/upload-paper/upload-paper.component';
-import { LoginComponent } from './civil/login/login.component';
-import { AboutComponent } from './civil/about/about.component';
-import { MembersComponent } from './civil/members/members.component';
+import {RegisterComponent} from './civil/register/register.component';
+import {ProfileComponent} from './civil/profile/profile.component';
+import {UploadPaperComponent} from './civil/upload-paper/upload-paper.component';
+import {LoginComponent} from './civil/login/login.component';
+import {AboutComponent} from './civil/about/about.component';
+import {MembersComponent} from './civil/members/members.component';
 import {DialogModule} from '../modules/dialog.module';
+import {FaqSliderComponent} from '../elements/faq-slider/faq-slider.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     direction: 'horizontal',
@@ -58,7 +59,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
         LoginComponent,
         AboutComponent,
         MembersComponent,
-
+        FaqSliderComponent
     ],
     imports: [
         DialogModule,

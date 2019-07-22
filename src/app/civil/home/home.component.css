@@ -673,3 +673,10 @@ img {
     width: 100%;
 }
 
+.frequent-asked-questions .title {
+    padding: 0 40px;
+}
+
+::ng-deep .frequent-asked-questions {
+    margin-top: 35px;
+}
