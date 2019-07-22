@@ -1,11 +1,13 @@
 
 .top-home {
-    height: 100%;
+    height: 350px;
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    background-image: url("../../../assets/img/library.jpg");
     width: 100%;
     background-color: #f1f2f2;
+    background-size: cover;
 }
 
 .nav-collapsed {
@@ -64,7 +66,6 @@
 }
 
 
-
 .text {
     margin-top: 140px
 }
@@ -117,11 +118,10 @@
     margin: 0 10px;
 }
 
-
 .social {
-    display: inline-block;
     margin-right: 25px;
-    margin-top: 35px;
+    position: absolute;
+    right: 0;
 }
 
 .social div {
@@ -180,13 +180,6 @@ input {
 #nav-toggle.active span:after {
     transform: rotate(-45deg);
     background: #1b2850;
-}
-
-
-.research-section {
-    display: flex;
-    flex-direction: column;
-    padding: 45px 40px;
 }
 
 .title-search {
@@ -370,8 +363,6 @@ ul li a:hover + .hidden, .hidden:hover {
 }
 
 
-
-
 /*Hide checkbox*/
 input[type=checkbox] {
     display: none;
@@ -482,7 +473,6 @@ img {
 }
 
 
-
 /*about arab section*/
 
 .full-section {
@@ -523,7 +513,7 @@ img {
     z-index: 100;
 }
 
-.img{
+.img {
     object-fit: cover;
 }
 
@@ -537,7 +527,6 @@ img {
     justify-content: space-between;
     padding: 55px 20px;
 }
-
 
 
 .card-item {
@@ -572,7 +561,6 @@ img {
     flex-direction: column;
     padding: 45px 40px;
 }
-
 
 
 .map img {
@@ -661,7 +649,6 @@ img {
 }
 
 
-
 .contact .full-section {
     position: relative;
     background: #f1f2f2;
@@ -682,10 +669,7 @@ img {
 }
 
 
-
 .example-form {
     width: 100%;
 }
-
-
 

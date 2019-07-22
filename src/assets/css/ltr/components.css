@@ -50,8 +50,10 @@ h1 {
 .login-register {
     display: flex;
     justify-content: space-between;
-    font-size: 40px;
-    color: #1b2850;
+    font-size: 35px;
+    font-weight: normal;
+    color: #fff;
+    cursor: pointer;
 }
 
 .left-section button {
@@ -81,7 +83,7 @@ h1 {
 
 .navbar {
     height: 100%;
-    width: 100px;
+    width: 90px;
     background-color: #1b2850;
     margin: 0 !important;
     border-radius: 0;
@@ -112,12 +114,12 @@ h1 {
     padding: 31px 95px;
 }
 
-.logo-right img{
+.logo-right img {
     width: 122px;
 }
 
 
-.logo-left img{
+.logo-left img {
     width: 130px;
 }
 
@@ -136,22 +138,33 @@ h1 {
 }
 
 .social-paper {
-    padding: 200px 0px 74px;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
+    margin-bottom: 35px 0;
+}
+
+.cards-icon {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card-icon {
+    position: relative;
+    padding: 50px 65px;
 }
 
 .social-paper img {
     position: absolute;
-    right: 305px;
-    bottom: 55px;
+    right: 105px;
+    bottom: 85px;
     width: 139px;
 }
 
 .box {
     width: 190px;
     height: 190px;
-    margin: 0 300px 2px 0;
     background-color: #75cddd;
 }
 
@@ -190,9 +203,8 @@ h1 {
 }
 
 .paper {
-    position: absolute;
-    bottom: -16px;
-    right: 265px;
+    position: relative;
+    bottom: -50px;
     color: #1b2850;
 }
 
@@ -223,3 +235,15 @@ h1 {
     text-align: left;
 }
 
+.blue-line {
+    border: 13px solid #75cddd;
+    background-color: #75cddd;
+    width: 165px;
+    position: absolute;
+    bottom: -15px;
+}
+
+.research-section {
+    margin-bottom: 75px;
+    margin-top: 30px;
+}
