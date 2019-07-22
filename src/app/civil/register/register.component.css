@@ -148,10 +148,6 @@
 }
 
 
-.mat-form-field--no-underline .mat-form-field-underline {
-    background-color: transparent !important;
-}
-
 .submit button {
     width: 100%;
     height: 100%;

@@ -32,6 +32,7 @@
     display: flex;
     justify-content: space-between;
     height: 30px;
+    margin-bottom: 20px;
 }
 
 
@@ -45,7 +46,11 @@
 
 .profile-container i{
     margin-right: 15px;
+    color: #1B2850;
+    font-size: 15px;
 }
+
+
 
 .user-name{
     display: flex;
@@ -86,7 +91,9 @@
     font-size: 18px;
 }
 
-
+.research-search a{
+    color: #1B2850;
+}
 
 
 
@@ -114,25 +121,41 @@
 }
 
 
+.edit-profile{
+    width: 110px;
+    height: 75px;
+    position: absolute;
+    right: 150px;
+    top: 66px;
+    color: #1B2850;
+    text-align: center;
+}
+
+.edit-profile i {
+    font-size: 30px;
+    color: #1b2850;
+}
+
+
 .profile-container .left-sticker {
     height: 155px;
     width: 50px;
     position: absolute;
-    background: orange;
     left: 5%;
     z-index: 100;
+    background: #75CDDD;
 }
 
 .profile-container .center-sticker {
     height: 100px;
     width: 100px;
     position: absolute;
-    background: #1b2850;
     top: 45%;
     left: 47%;
     bottom: 50%;
     right: 50%;
     z-index: 100;
+    background: #FDD97A;
 }
 
 .profile-photo img{
@@ -189,19 +212,40 @@ input {
 .cards-items {
     display: flex;
     justify-content: space-between;
+    color: #1B2850;
 }
 
 .cards-items .bookmark {
     text-align: right;
     position: relative;
-    top: -35px;
+    top: -22px;
     font-size: 35px;
+    color: #75CDDD;
 }
 
 .cards-items h3 {
     margin-top: -35px;
 }
 
+.paper-card-info{
+
+    display: flex;
+}
+
+.by {
+    margin-right: 3px;
+    color: #75cddd;
+}
+
+.paper-card-info i{
+    margin-right: 5px;
+    margin-top: 7px;
+    color: #75cddd;
+}
+
+.cards-items .title div{
+    border: 6px solid #1B2850;
+}
 
 .login-register div {
     margin: 0 10px;
@@ -483,7 +527,45 @@ input[type=checkbox]:checked ~ #menu {
 
 }
 
-
 .research-papers {
     padding: 0 80px;
+}
+
+.view-download{
+    display: flex;
+    margin-top: 33px;
+}
+
+
+.views-paper , .download-paper{
+    display: flex;
+}
+
+.view-download i{
+    width: 10px;
+    color: #75cddd;
+    margin-right: 7px;
+    margin-top: 7px;
+}
+
+.view-download h6{
+    cursor: pointer;
+}
+
+
+.views-paper{
+    margin-right: 10px;
+    width: 115px;
+}
+
+.edit-paper{
+    width: 100%;
+    font-size: 25px;
+
+}
+
+
+.edit-paper i{
+    float: right;
+    color: #1B2850;
 }

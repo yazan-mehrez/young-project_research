@@ -31,7 +31,6 @@ import { UploadPaperComponent } from './civil/upload-paper/upload-paper.componen
 import { LoginComponent } from './civil/login/login.component';
 import { AboutComponent } from './civil/about/about.component';
 import { MembersComponent } from './civil/members/members.component';
-import { ProfileInfoComponent } from './dialogs/profile-info/profile-info.component';
 import {DialogModule} from '../modules/dialog.module';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {

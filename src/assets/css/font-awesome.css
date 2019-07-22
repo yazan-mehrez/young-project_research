@@ -95,6 +95,8 @@
     margin-left: .3em;
 }
 
+
+
 .fa-spin {
     -webkit-animation: spin 2s infinite linear;
     -moz-animation: spin 2s infinite linear;
@@ -227,12 +229,27 @@
     content: "\f000";
 }
 
+
+.fa-university:before {
+    content: "\f19c";
+}
+
+
+.fa-address-book-o:before {
+    content: "\f2ba";
+}
+
+
 .fa-music:before {
     content: "\f001";
 }
 
 .fa-search:before {
     content: "\f002";
+}
+
+.fa-calendar-minus-o:before {
+    content: "\f272 ";
 }
 
 .fa-envelope-o:before {
