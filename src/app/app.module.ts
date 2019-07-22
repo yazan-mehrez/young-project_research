@@ -25,14 +25,19 @@ import {FormsExamplesComponent} from '../elements/forms-examples/forms-examples.
 import {CaptchaComponent} from '../elements/captcha/captcha.component';
 import {AppSwiperComponent} from '../elements/app-swiper/app-swiper.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {RegisterComponent} from './civil/register/register.component';
-import {ProfileComponent} from './civil/profile/profile.component';
-import {UploadPaperComponent} from './civil/upload-paper/upload-paper.component';
-import {LoginComponent} from './civil/login/login.component';
-import {AboutComponent} from './civil/about/about.component';
-import {MembersComponent} from './civil/members/members.component';
+import { RegisterComponent } from './civil/register/register.component';
+import { ProfileComponent } from './civil/profile/profile.component';
+import { UploadPaperComponent } from './civil/upload-research-paper/upload-paper/upload-paper.component';
+import { LoginComponent } from './civil/login/login.component';
+import { AboutComponent } from './civil/about/about.component';
+import { MembersComponent } from './civil/members/members.component';
 import {DialogModule} from '../modules/dialog.module';
+import { UploadResearchPaperComponent } from './civil/upload-research-paper/upload-research-paper.component';
+import { DetailsPaperComponent } from './civil/upload-research-paper/details-paper/details-paper.component';
+import { PermissionPeparComponent } from './civil/upload-research-paper/permission-pepar/permission-pepar.component';
+import { MatRadioModule } from '@angular/material/radio';
 import {FaqSliderComponent} from '../elements/faq-slider/faq-slider.component';
+
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     direction: 'horizontal',
@@ -59,7 +64,11 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
         LoginComponent,
         AboutComponent,
         MembersComponent,
-        FaqSliderComponent
+        FaqSliderComponent,
+        UploadResearchPaperComponent,
+        DetailsPaperComponent,
+        PermissionPeparComponent,
+
     ],
     imports: [
         DialogModule,
@@ -74,6 +83,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
         HttpClientModule,
         RouterModule,
         MatFormFieldModule,
+        MatRadioModule,
         MatInputModule,
         BsDatepickerModule.forRoot(),
         BsDropdownModule.forRoot(),

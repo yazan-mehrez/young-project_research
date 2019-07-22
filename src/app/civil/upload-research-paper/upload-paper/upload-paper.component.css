@@ -1,0 +1,122 @@
+
+.form-input{
+    margin-top: 80px;
+}
+
+.form-input .item {
+    width: 100%;
+}
+
+.form-input .mat-form-field {
+    width: 100%;
+}
+
+.form-input .item input {
+    height: 30px;
+}
+
+
+.sec-content .title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1b2850;
+}
+
+
+
+ .title div {
+     border: 13px solid #75cddd;
+     background-color: #75cddd;
+     width: 115px;
+}
+
+
+.submit {
+    text-align: center;
+    height: 55px;
+    display: flex;
+}
+
+.submit button {
+    width: 100%;
+    height: 100%;
+    background-color: #75cddd;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+.choose-file{
+    border: 1px solid #75cddd;
+}
+
+
+.drag-box{
+    height: 130px;
+    text-align: center;
+}
+
+.drag-box p {
+    padding: 60px;
+    font-size: 21px;
+    color: #707070;
+}
+
+
+
+.file_name {
+    margin: 100px 0;
+    height: 55px;
+    display: flex;
+    background: #fff;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+
+
+.check-filename{
+    display: flex;
+    justify-content: flex-start;
+
+}
+.check-filename p{
+    margin-top: 5px;
+    font-size: 20px;
+
+}
+
+.check-filename i{
+    font-size: 40px;
+    margin-right: 20px;
+    color: #75cddd;
+}
+
+.check-filename i{
+    width: 40px;
+}
+
+
+.clear{
+    text-align: right;
+}
+
+.clear i{
+    font-size: 35px;
+}
+
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    width: 100%;
+    height: 100%;
+    background-color: #75cddd;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    padding: 8px 0;
+    font-weight: normal;
+
+}

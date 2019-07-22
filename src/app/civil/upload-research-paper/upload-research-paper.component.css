@@ -3,6 +3,9 @@
     height: 100%;
 }
 
+.upload-file{
+    height: 835px;
+}
 
 .upload-file img {
     width: 100%;
@@ -107,7 +110,7 @@
 /* end navbar*/
 
 
-.upload-file .title div {
+.title div {
     border: 13px solid #75cddd;
     background-color: #75cddd;
     width: 115px;
@@ -117,7 +120,7 @@
 .upload-file .full-section {
     position: relative;
     background: #f1f2f2;
-    margin: 15px 0;
+    margin: 65px 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -134,30 +137,102 @@
 
 }
 
-.upload-file-info p {
-    font-size: 18px;
-}
+/*.upload-file-info p {*/
+/*    font-size: 18px;*/
+/*}*/
 
 
-.example-form {
-    width: 100%;
-}
+/*.upload-paper-form {*/
+/*    width: 100%;*/
+/*}*/
 
 
-.submit {
-    text-align: center;
-    height: 70px;
-    margin: 20px 0 10px 0;
-    display: flex;
+/*.submit {*/
+/*    text-align: center;*/
+/*    height: 55px;*/
+/*    display: flex;*/
+/*}*/
 
-}
+/*.submit button {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background-color: #75cddd;*/
+/*    border: none;*/
+/*    color: #fff;*/
+/*    font-size: 30px;*/
+/*}*/
 
-.submit button {
-    width: 100%;
-    height: 100%;
-    background-color: #75cddd;
-    border: none;
-    color: #fff;
-    font-size: 35px;
-}
+/*.choose-file{*/
+/*    border: 1px solid #75cddd;*/
+/*}*/
 
+
+/*.drag-box{*/
+/*    height: 130px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.drag-box p {*/
+/*    padding: 60px;*/
+/*    font-size: 21px;*/
+/*    color: #707070;*/
+/*}*/
+
+
+
+/*.file_name {*/
+/*    margin: 100px 0;*/
+/*    height: 55px;*/
+/*    display: flex;*/
+/*    background: #fff;*/
+/*    padding: 10px 20px;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+
+
+/*.check-filename{*/
+/*    display: flex;*/
+/*    justify-content: flex-start;*/
+
+/*}*/
+/*.check-filename p{*/
+/*    margin-top: 5px;*/
+/*    font-size: 20px;*/
+
+/*}*/
+
+/*.check-filename i{*/
+/*    font-size: 40px;*/
+/*    margin-right: 20px;*/
+/*    color: #75cddd;*/
+/*}*/
+
+/*.check-filename i{*/
+/*    width: 40px;*/
+/*}*/
+
+
+/*.clear{*/
+/*    text-align: right;*/
+/*}*/
+
+/*.clear i{*/
+/*    font-size: 35px;*/
+/*}*/
+
+
+/*input[type="file"] {*/
+/*    display: none;*/
+/*}*/
+/*.custom-file-upload {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background-color: #75cddd;*/
+/*    border: none;*/
+/*    color: #fff;*/
+/*    font-size: 30px;*/
+/*    padding: 8px 0;*/
+/*    font-weight: normal;*/
+
+/*}*/

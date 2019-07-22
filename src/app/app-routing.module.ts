@@ -5,10 +5,13 @@ import {CivilComponent} from './civil/civil.component';
 import {HomeComponent} from './civil/home/home.component';
 import {RegisterComponent} from './civil/register/register.component';
 import {ProfileComponent} from './civil/profile/profile.component';
-import {UploadPaperComponent} from './civil/upload-paper/upload-paper.component';
+import {UploadPaperComponent} from './civil/upload-research-paper/upload-paper/upload-paper.component';
 import {LoginComponent} from './civil/login/login.component';
 import {AboutComponent} from './civil/about/about.component';
 import {MembersComponent} from './civil/members/members.component';
+import {UploadResearchPaperComponent} from './civil/upload-research-paper/upload-research-paper.component';
+import {DetailsPaperComponent} from './civil/upload-research-paper/details-paper/details-paper.component';
+import {PermissionPeparComponent} from './civil/upload-research-paper/permission-pepar/permission-pepar.component';
 
 const routes: Routes = [
     {
@@ -30,7 +33,21 @@ const routes: Routes = [
             },
             {
                 path: 'upload-paper',
-                component: UploadPaperComponent
+                component: UploadResearchPaperComponent,
+                children: [
+                    {
+                        path: '',
+                        component: UploadPaperComponent
+                    },
+                    {
+                        path: 'details',
+                        component: DetailsPaperComponent
+                    },
+                    {
+                        path: 'upload-completed',
+                        component: PermissionPeparComponent
+                    },
+                ]
             },
             {
                 path: 'login',
