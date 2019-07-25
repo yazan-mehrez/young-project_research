@@ -12,6 +12,9 @@ import {MembersComponent} from './civil/members/members.component';
 import {UploadResearchPaperComponent} from './civil/upload-research-paper/upload-research-paper.component';
 import {DetailsPaperComponent} from './civil/upload-research-paper/details-paper/details-paper.component';
 import {PermissionPeparComponent} from './civil/upload-research-paper/permission-pepar/permission-pepar.component';
+import {PapersComponent} from './civil/papers/papers.component';
+import {EditPaperComponent} from './civil/edit-paper/edit-paper.component';
+import {MemberDetailsComponent} from './civil/member-details/member-details.component';
 
 const routes: Routes = [
     {
@@ -30,6 +33,10 @@ const routes: Routes = [
             {
                 path: 'profile',
                 component: ProfileComponent
+            },
+            {
+                path: 'profile-info',
+                component: MemberDetailsComponent
             },
             {
                 path: 'upload-paper',
@@ -60,6 +67,14 @@ const routes: Routes = [
             {
                 path: 'members',
                 component: MembersComponent
+            },
+            {
+                path: 'papers',
+                component: PapersComponent
+            },
+            {
+                path: 'edit-paper',
+                component: EditPaperComponent
             },
             {
                 path: '',

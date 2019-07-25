@@ -8,6 +8,7 @@ import {DataService} from '../services/data.service';
     providedIn: 'root'
 })
 export class AppService {
+    public fileName: string;
     public language = new BehaviorSubject<string>(null);
     currentLanguage: string;
 

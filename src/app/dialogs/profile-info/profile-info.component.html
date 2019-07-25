@@ -1,50 +1,59 @@
 <div class="profile-info">
     <form class="full-section profile-form example-form" [formGroup]="profileForm">
         <div class="info-left-section example-form">
-            <div class="avatar"><img src="assets/img/avatar_default.PNG" alt=""></div>
-            <div class="image-upload">
-                <label for="file-input">
-                    <img src="assets/img/camera.PNG"/>
-                </label>
-                <input id="file-input" type="file"/>
+            <div class="avatar">
+                <img src="assets/img/avatar_default.PNG" alt="">
+                <div class="image-upload">
+                    <label for="file-input">
+                        <img src="assets/img/camera.PNG"/>
+                    </label>
+                    <input id="file-input" type="file"/>
+                </div>
             </div>
+
             <div class="title">
                 <p>Ghina Sallit!</p>
                 <div></div>
             </div>
             <div>
 
-                <div class="field-item">
-                    <div class="field-select">
-                        <mat-form-field>
-                            <mat-select>
-                                <mat-option value="option">Option</mat-option>
-                                <mat-option value="option">Option</mat-option>
-                                <mat-option value="option">Option</mat-option>
-                                <mat-option value="option">Option</mat-option>
-                            </mat-select>
-                        </mat-form-field>
+
+                    <mat-form-field>
+                        <mat-label>Favorite animal</mat-label>
+                        <mat-select [formControl]="university" required>
+                            <mat-option>--</mat-option>
+                            <mat-option *ngFor="let animal of animals" [value]="animal">
+                                {{animal.name}}
+                            </mat-option>
+                        </mat-select>
+                        <mat-error *ngIf="university.hasError('required')">Please choose ypur university</mat-error>
+                        <mat-hint>{{university.value?.sound}}</mat-hint>
                         <i class="fa fa-university" aria-hidden="true"></i>
-                    </div>
-                </div>
-
-                <div class="field-item">
-                    <mat-form-field class="example-full-width">
-                        <input matInput placeholder="" value="">
                     </mat-form-field>
-                    <i class="fa fa-address-book-o" aria-hidden="true"></i>
-                </div>
+                    <div class="field-item">
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="job" value="">
+                        </mat-form-field>
+                        <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                    </div>
 
                 <div class="field-item">
                     <mat-form-field class="example-full-width">
-                        <input matInput placeholder="" value="">
+                        <input matInput placeholder="phone" value="">
                     </mat-form-field>
                     <i class="fa fa-mobile" aria-hidden="true"></i>
                 </div>
 
                 <div class="field-item">
                     <mat-form-field class="example-full-width">
-                        <input matInput placeholder="" value="">
+                        <input matInput placeholder="location" value="">
+                    </mat-form-field>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+
+                <div class="field-item">
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Linkedin" value="">
                     </mat-form-field>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                 </div>
@@ -69,10 +78,10 @@
             <div class="submit">
                 <button>Save Your Profile info</button>
             </div>
-            <div class="profile-skip">
-                <a>Go to profile</a><span>!</span><a>Skip for now.</a>
+            <!--            <div class="profile-skip">-->
+            <!--                <a>Go to profile</a><span>!</span><a>Skip for now.</a>-->
 
-            </div>
+            <!--            </div>-->
         </div>
     </form>
 

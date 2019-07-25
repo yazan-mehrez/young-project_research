@@ -3,6 +3,9 @@ import {TranslateService} from '@ngx-translate/core';
 import {AppService} from '../../app.service';
 import {fadeInOut} from '../../../animations/fadeInOut';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+// import * as L from 'leaflet';
+// import 'leaflet.heat/dist/leaflet-heat.js';
+import {addressPoints} from '../../../assets/realworld.10000.ts';
 
 @Component({
     selector: 'app-home',
@@ -68,6 +71,26 @@ export class HomeComponent implements OnInit {
             this.itemIndex -= 1;
         }
     }
+
+
+    //
+    // options = {
+    //     layers: [
+    //         L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    //             maxZoom: 18,
+    //             attribution: ""
+    //         })
+    //     ],
+    //     zoom: 12,
+    //     center: L.latLng(-37.87, 175.475)
+    // };
+    //
+    //
+    // onMapReady(map) {
+    //     let newAddressPoints = addressPoints.map(function (p) { return [p[0], p[1]]; });
+    //     const heat = L.heatLayer(newAddressPoints).addTo(map);
+    // }
+
 
     ngOnInit() {
 

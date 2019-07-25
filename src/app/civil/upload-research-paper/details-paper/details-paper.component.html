@@ -1,36 +1,53 @@
-    <div class="sec-content">
-      <div class="title">
+<div class="sec-content">
+    <div class="title">
         <p> Research Papers Details</p>
         <div></div>
-      </div>
-      <div class="full-section form-input">
-        <form class="upload-paper-form" [formGroup]="uploadPaperForm">
-<!--            <div class="item">-->
-<!--                <mat-form-field class="example-full-width">-->
-<!--                    <input matInput placeholder="Email Address" formControlName="email">-->
-<!--                </mat-form-field>-->
-<!--            </div>-->
-            <div>
-                <h4>Title</h4>
-                <textarea class="textbox-lines" rows="1"></textarea>
-            </div>
-            <div>
-                <h4>Description</h4>
-                <textarea class="textbox-lines" rows="6"></textarea>
-            </div>
-            <div>
-                <h4>Tags</h4>
-                <textarea class="textbox-lines" rows="1"></textarea>
-            </div>
-            <div>
-                <h4>Discipline</h4>
-                <textarea class="textbox-lines" rows="1"></textarea>
-            </div>
-            <div class="submit">
-                <button>Continue</button>
-            </div>
-
-        </form>
-      </div>
-
     </div>
+    <div class="full-section form-input">
+        <form class="upload-paper-form" [formGroup]="paperForm">
+            <div class="example-container">
+                <mat-form-field>
+                    <input matInput placeholder="Title" formControlName="title"  required>
+                    <mat-error *ngIf="title.errors.required">required</mat-error>
+                </mat-form-field>
+            </div>
+
+            <mat-form-field hintLabel="Max 500 characters">
+                <textarea matInput  #input  placeholder="Description" maxlength="500" formControlName="description"  required></textarea>
+                <mat-hint align="end">{{input.value?.length || 0}}/500</mat-hint>
+                <mat-error *ngIf="description.errors.required">required</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-select placeholder="Tags"  formControlName="tags"  multiple required>
+                    <mat-select-trigger>
+                        {{toppings.value ? toppings.value[0] : ''}}
+                        <span *ngIf="toppings.value?.length > 1" class="example-additional-selection">
+        (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+      </span>
+                    </mat-select-trigger>
+                    <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <div class="example-container">
+                <mat-form-field>
+                    <input matInput placeholder="Discipline" formControlName="discipline" required>
+                    <mat-error *ngIf="discipline.errors.required">required</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="lang">
+                <p>Research Paper Language *</p>
+                <mat-radio-group aria-label="Select an option" formControlName="lang" required>
+                    <mat-radio-button value="1" checked>English</mat-radio-button>
+                    <mat-radio-button value="2">Arabic</mat-radio-button>
+                </mat-radio-group>
+            </div>
+
+            <div class="submit">
+                <button (click)="savePaper()" [disabled]="!paperForm.valid" >Continue</button>
+
+            </div>
+        </form>
+    </div>
+
+</div>

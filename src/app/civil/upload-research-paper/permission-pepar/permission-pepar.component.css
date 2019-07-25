@@ -3,6 +3,7 @@
     font-size: 30px;
     font-weight: bold;
     color: #1b2850;
+    position: relative ;
 }
 
 .title div {
@@ -11,10 +12,19 @@
     width: 115px;
 }
 
+.title i {
+    position: absolute;
+    top: 0px;
+    right: 365px;
+    font-size: 44px;
+    color: #75cddd;;
+}
+
 .submit {
     text-align: center;
     height: 55px;
     display: flex;
+    border: none;
 }
 
 .submit button {
@@ -57,7 +67,7 @@ width: 130px;
 }
 
 .permissions{
-    width: 50%;
+    width: 40%;
 }
 
 
@@ -68,7 +78,7 @@ width: 130px;
 }
 
 .permission-radio-button {
-    margin: 5px;
+    margin: 25px 0;
 }
 
 
@@ -106,3 +116,6 @@ width: 130px;
     transform: scale(.001);
 }
 
+::ng-deep .mat-radio-label {
+    white-space: inherit !important;
+}

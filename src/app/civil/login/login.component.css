@@ -1,6 +1,6 @@
 
-.register{
-    height: 670px;
+.login{
+    height: 835px;
 }
 
 .sec-img {
@@ -8,7 +8,7 @@
 }
 
 
-.register img {
+.login img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -27,7 +27,7 @@
 }
 
 
-.register .title {
+.login .title {
     font-size: 30px;
     font-weight: bold;
     color: #1b2850;
@@ -106,14 +106,14 @@
 /* end navbar*/
 
 
-.register .title div {
+.login .title div {
     border: 13px solid #75cddd;
     background-color: #75cddd;
     width: 115px;
 }
 
 
-.register .full-section {
+.login .full-section {
     position: relative;
     background: #f1f2f2;
     margin: 15px 0;
@@ -133,10 +133,10 @@
 
 }
 
-.register-info p {
-    font-size: 18px;
+.full-section .sec-content {
+padding: 20px 135px;
+text-align: left;
 }
-
 
 .example-form {
     width: 100%;

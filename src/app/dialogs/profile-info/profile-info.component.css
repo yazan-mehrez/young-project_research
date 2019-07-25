@@ -1,7 +1,6 @@
 .profile-info {
-    width: 800px;
-    /*set auto*/
-    height: 535px;
+    width: auto;
+    height: auto;
     background-color: #F1F2F2;
 
 
@@ -16,7 +15,7 @@
 .profile-form {
     width: 100%;
     height: 100%;
-    padding: 35px;
+    padding: 12px 35px;
     display: flex;
     justify-content: space-around;
 }
@@ -94,7 +93,7 @@
 }
 
 .profile-skip {
-    margin: 37px 10px;
+    margin: 70px 10px 20px;;
     text-align: right;
 
 }
@@ -138,12 +137,12 @@
 
 .image-upload {
     position: absolute;
-    top: 532px;
-    right: 1068px;
+    top: 220px;
+    right: 125px;
     width: 35px;
     height: 35px;
     padding: 5px;
-    background-color: #FFF
+    background-color: #FFF;
 }
 
 .image-upload img {
@@ -176,8 +175,8 @@
 
 .field-item i {
     position: absolute;
-    left: 0;
-    top: 5px;
+    left: -20px;
+    top: 10px;
 }
 
 ::ng-deep .mat-form-field-infix input {
@@ -190,11 +189,20 @@
 }
 
 .field-item .field-select i {
-    top: 0;
+    position: absolute;
+    top: 7px;
+    left: -23px;
 }
 
 ::ng-deep .mat-select-panel {
     background: #f1f2f2;
     border: 1px solid #cacece;
     box-shadow: 0px 0px 7px 3px #d4d8d8;
+}
+
+.mat-form-field i {
+    position: absolute;
+    left: -22px;
+    top: 7px;
+
 }

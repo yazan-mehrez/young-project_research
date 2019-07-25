@@ -8,7 +8,7 @@ import {SlideshowModule} from 'ng-simple-slideshow';
 import {RouterModule} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import {AppRoutingModule} from './app-routing.module';
-import {MatCardModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+import {MatCardModule, MatFormFieldModule, MatInputModule, MatSelectModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SafePipe} from '../pipes/safeURLs.pipe';
 import {SWIPER_CONFIG, SwiperConfigInterface, SwiperModule} from 'ngx-swiper-wrapper';
@@ -37,6 +37,12 @@ import { DetailsPaperComponent } from './civil/upload-research-paper/details-pap
 import { PermissionPeparComponent } from './civil/upload-research-paper/permission-pepar/permission-pepar.component';
 import { MatRadioModule } from '@angular/material/radio';
 import {FaqSliderComponent} from '../elements/faq-slider/faq-slider.component';
+import { PapersComponent } from './civil/papers/papers.component';
+import { EditPaperComponent } from './civil/edit-paper/edit-paper.component';
+import { MemberDetailsComponent } from './civil/member-details/member-details.component';
+// import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+
+
 
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
@@ -68,9 +74,13 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
         UploadResearchPaperComponent,
         DetailsPaperComponent,
         PermissionPeparComponent,
+        PapersComponent,
+        EditPaperComponent,
+        MemberDetailsComponent,
 
     ],
     imports: [
+
         DialogModule,
         BrowserModule,
         BrowserAnimationsModule,
@@ -84,8 +94,10 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
         RouterModule,
         MatFormFieldModule,
         MatRadioModule,
+        MatSelectModule,
         MatInputModule,
         BsDatepickerModule.forRoot(),
+        // LeafletModule.forRoot(),
         BsDropdownModule.forRoot(),
         DatepickerModule.forRoot(),
         TranslateModule.forRoot(),

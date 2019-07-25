@@ -38,3 +38,42 @@
     src: url("../fonts/GE_SS_Text_UltraLight.otf") format("opentype"),
     url("../fonts/GE_SS_Text_UltraLight.otf") format("woff");
 }
+
+@font-face {
+    font-family: "cairo-black";
+    src: url("../fonts/Cairo-Black.ttf") format("opentype"),
+    url("../fonts/Cairo-Black.ttf") format("woff");
+}
+
+@font-face {
+    font-family: "cairo-bold";
+    src: url("../fonts/Cairo-Bold.ttf") format("opentype"),
+    url("../fonts/Cairo-Bold.ttf") format("woff");
+}
+
+
+@font-face {
+    font-family: "cairo-light";
+    src: url("../fonts/Cairo-Light.ttf") format("opentype"),
+    url("../fonts/Cairo-Light.ttf") format("woff");
+}
+
+
+@font-face {
+    font-family: "cairo-regular";
+    src: url("../fonts/Cairo-Regular.ttf") format("opentype"),
+    url("../fonts/Cairo-Regular.ttf") format("woff");
+}
+
+
+@font-face {
+    font-family: "cairo-extra-light";
+    src: url("../fonts/Cairo-ExtraLight.ttf") format("opentype"),
+    url("../fonts/Cairo-ExtraLight.ttf") format("woff");
+}
+
+@font-face {
+    font-family: "cairo-semi-boold";
+    src: url("../fonts/Cairo-SemiBold.ttf") format("opentype"),
+    url("../fonts/Cairo-SemiBold.ttf") format("woff");
+}

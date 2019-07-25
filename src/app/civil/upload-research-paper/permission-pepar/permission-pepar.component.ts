@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
 import {MatRadioModule} from '@angular/material/radio';
+import {AppService} from '../../../app.service';
 
 @Component({
 
@@ -10,7 +11,8 @@ import {MatRadioModule} from '@angular/material/radio';
 })
 export class PermissionPeparComponent implements OnInit {
   permissionForm: FormGroup;
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder ,
+              public  appService: AppService) {
 
     this.permissionForm = fb.group({
       // 'File': [''],

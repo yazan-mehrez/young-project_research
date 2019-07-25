@@ -1,3 +1,166 @@
-<p>
-  members works!
-</p>
+<div class="nav-collapsed" *ngIf="collapsed">
+    <a>Home Page</a>
+    <a>Research Paper</a>
+    <a>About Us</a>
+    <a>How to Become a Researcher</a>
+    <a>Our Members</a>
+    <a>Heat Map</a>
+    <a>Contact Us</a>
+</div>
+
+<div class="full-section" data-aos="fade-up" data-aos-duration="1000">
+    <div class="side">
+        <div class="sec-img">
+            <img src="assets/img/member1.jpg">
+        </div>
+    </div>
+    <div class="side">
+        <div class="navbar-login">
+            <div class="navbar"
+                 [style.z-index]="collapsed ? '550' : ''"
+                 [style.background-color]="collapsed ? '#fff' : ''">
+                <a id="nav-toggle" [ngClass]="collapsed ? 'active' : ''" (click)="collapsed = !collapsed">
+                    <span [style.color]="collapsed ? '#1b2850' : ''"></span>
+                </a>
+            </div>
+            <div class="login-register">
+                <div class="lang">العربية</div>
+                <div class="rigister">Register</div>
+                <div class="login">Login</div>
+            </div>
+        </div>
+
+        <div class="sec-content">
+            <div class="about-content">
+                <div class="title">
+                    <p>Meet Our Research Members.</p>
+                    <div></div>
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aperiam atque consequuntur
+                        ducimus
+                        et
+                        fuga fugiat non odit quos, ratione repellendus, sapiente temporibus totam veritatis! Ipsum
+                        laborum
+                        officia
+                        voluptatibus
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aperiam atque consequuntur
+                        ducimus
+                        et
+                        fuga fugiat non odit quos, ratione repellendus, sapiente temporibus totam veritatis! Ipsum
+                        laborum
+                        officia
+                        voluptatibus.</p>
+                </div>
+
+            </div>
+            <div class="social">
+                <div><i class="fa fa-facebook"></i></div>
+                <div><i class="fa fa-instagram"></i></div>
+                <div><i class="fa fa-twitter"></i></div>
+                <div><i class="fa fa-youtube"></i></div>
+            </div>
+
+            <div class="blue-sep"></div>
+        </div>
+    </div>
+</div>
+
+<div class="members-section">
+    <div class="characters-filters">
+        <div class="characters">
+            <p>A</p>
+            <p>B</p>
+            <p>C</p>
+            <p>D</p>
+            <p>E</p>
+            <p>F</p>
+            <p>G</p>
+            <p>H</p>
+            <p>I</p>
+            <p>J</p>
+            <p>K</p>
+            <p>L</p>
+            <p>M</p>
+            <p>N</p>
+            <p>O</p>
+            <p>P</p>
+            <p>Q</p>
+            <p>R</p>
+            <p>S</p>
+            <p>T</p>
+            <p>U</p>
+            <p>V</p>
+            <p>W</p>
+            <p>X</p>
+            <p>Y</p>
+            <p>z</p>
+        </div>
+        <div class="filters">
+            <div class="sort-icon"><i class="fa fa-sort-desc" aria-hidden="true"></i></div>
+            <div class="filter-icon"><i class="fa fa-filter" aria-hidden="true"></i></div>
+        </div>
+    </div>
+    <div class="col-lg-12 research-input">
+        <div class="row">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search...">
+                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><i class="fa fa-search"
+                                                                                 aria-hidden="true"></i></button>
+                        </span>
+            </div>
+        </div>
+    </div>
+    <div class="members-cards">
+        <div class="card">
+            <img src="assets/img/member1.jpg" alt="">
+            <div class="title">
+                <p>Ghina sallit</p>
+                <div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/img/member1.jpg" alt="">
+            <div class="title">
+                <p>Ghina sallit</p>
+                <div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/img/member1.jpg" alt="">
+            <div class="title">
+                <p>Ghina sallit</p>
+                <div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/img/member1.jpg" alt="">
+            <div class="title">
+                <p>Ghina sallit</p>
+                <div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/img/member1.jpg" alt="">
+            <div class="title">
+                <p>Ghina sallit</p>
+                <div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/img/member1.jpg" alt="">
+            <div class="title">
+                <p>Ghina sallit</p>
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

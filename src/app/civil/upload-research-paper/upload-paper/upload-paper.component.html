@@ -20,13 +20,13 @@
                     <div class="file_name" *ngIf="UploadFile">
                         <div class="check-filename">
                             <i class="fa fa-check" aria-hidden="true"></i>
-                            <p>{{fileName}}</p>
+                            <p>{{appService.fileName}}</p>
                         </div>
                         <div class="clear" (click)="clearFile()">
                             <i class="fa fa-times-circle" aria-hidden="true"></i>
                         </div>
                     </div>
-                    <div class="submit" *ngIf="UploadFile">
+                    <div class="submit" *ngIf="UploadFile" routerLink="details" >
                         <button>Continue</button>
                     </div>
 

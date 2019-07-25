@@ -71,25 +71,19 @@
 /* end navbar*/
 
 
-.top-home {
-    height: 100%;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #f1f2f2;
-}
+/*.top-home {*/
+/*    height: 100%;*/
+/*    color: #fff;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    width: 100%;*/
+/*    background-color: #f1f2f2;*/
+/*}*/
 
 
 
 .navbar-login div {
     margin: 0 10px;
-}
-
-.social {
-    display: inline-block;
-    margin-right: 25px;
-    margin-top: 35px;
 }
 
 .social div {
@@ -101,6 +95,13 @@
     font-size: 25px;
     color: #1b2850;
     margin-bottom: 16px;
+}
+
+
+.social {
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 180px;
 }
 
 
@@ -117,10 +118,15 @@
 
 }
 
+.full-section .sec-img{
+    height: 100%;
+}
+
 .full-section .sec-img img {
     width: 100%;
     padding: 0;
     object-fit: cover;
+    height: 100%;
 }
 
 
@@ -128,7 +134,7 @@
     height: 155px;
     width: 50px;
     position: absolute;
-    background: orange;
+    background: #FDD97A;
     left: 5%;
     z-index: 100;
 }
@@ -161,7 +167,12 @@
     padding: 10px 85px;
 }
 
-.about-content .text-left p{
+.researshers{
+
+    padding: 140px 85px 10px;
+}
+
+.text-left p {
     font-size: 65px;
 }
 
@@ -170,3 +181,72 @@
      padding: 0;
     text-align: left;
 }
+
+
+.become-researcher{
+    height: 835px;
+}
+
+.full-section{
+    height: 835px
+}
+
+
+/*p margin-top: 60px;*/
+
+
+
+.title div {
+    border: 13px solid #75cddd;
+    background-color: #75cddd;
+    width: 115px;
+
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1b2850;
+    margin-bottom: 25px;
+    width: 90%;
+
+}
+
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 265px;
+}
+
+
+.card-item img{
+
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+
+.about-content .content{
+    margin-top: 55px;
+}
+
+
+.card-item .title p {
+    font-size: 20px;
+
+}
+
+.card-item .title div {
+    border: 13px solid #1b2850;
+    background-color: #1b2850;
+    width: 115px;
+}
+
+
+.content p {
+    margin: 0 100px 0 0;
+    font-size: 18px;
+
+}
+

@@ -7,6 +7,10 @@ h1 {
     color: #1b2850;
 }
 
+
+h1 , h2 , h3 , h4 , h5 , h6 , p {
+ color: #1b2850;
+}
 .header {
     overflow: hidden;
     height: 205px;
@@ -150,16 +154,23 @@ h1 {
     width: 100%;
 }
 
-.card-icon {
+.card-icon-research , .card-icon-submit {
     position: relative;
     padding: 50px 65px;
 }
 
-.social-paper img {
+.card-icon-research img {
     position: absolute;
-    right: 105px;
-    bottom: 85px;
-    width: 139px;
+    right: 122px;
+    bottom: 67px;
+    width: 140px;
+}
+
+.card-icon-submit img {
+    position: absolute;
+    right: 87px;
+    bottom: 67px;
+    width: 140px;
 }
 
 .box {
@@ -216,9 +227,9 @@ h1 {
 
 .contact h1 {
     font-family: 'Geneva';
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 600;
-    margin: 20px 0;
+    margin: 20px 0 77px;
     text-align: left;
     color: #1b2850;
 }
@@ -230,10 +241,7 @@ h1 {
     padding: 0px 200px;
 }
 
-.full-section .sec-content {
-    padding: 20px 135px;
-    text-align: left;
-}
+
 
 .blue-line {
     border: 13px solid #75cddd;
@@ -244,6 +252,6 @@ h1 {
 }
 
 .research-section {
-    margin-bottom: 75px;
-    margin-top: 30px;
+    /*margin-bottom: 75px;*/
+    /*margin-top: 30px;*/
 }

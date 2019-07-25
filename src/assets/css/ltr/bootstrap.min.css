@@ -6,10 +6,18 @@
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
-    font-family: sans-serif;
+    font-family: 'cairo-regular' , sans-serif;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
+
+h1{font-family: 'cairo-bold'}
+p{font-family: 'cairo-regular'}
+div{font-family: 'cairo-regular'}
+a{font-family: 'cairo-semi-boold'}
+h2{font-family: 'cairo-bold'}
+
+
 body {
     margin: 0;
 }
@@ -1188,7 +1196,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: inherit;
+    /*font-family: inherit;*/
     font-weight: 500;
     line-height: 1.1;
     color: inherit;
@@ -1526,7 +1534,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    /*font-family: Menlo, Monaco, Consolas, "Courier New", monospace;*/
 }
 code {
     padding: 2px 4px;
@@ -5843,7 +5851,7 @@ button.close {
     position: absolute;
     z-index: 1070;
     display: block;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     font-size: 12px;
     font-weight: normal;
     line-height: 1.4;
@@ -5950,7 +5958,7 @@ button.close {
     display: none;
     max-width: 276px;
     padding: 1px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     font-size: 14px;
     font-weight: normal;
     line-height: 1.42857143;
@@ -6207,7 +6215,7 @@ button.close {
     width: 20px;
     height: 20px;
     margin-top: -10px;
-    font-family: serif;
+    /*font-family: serif;*/
     line-height: 1;
 }
 .carousel-control .icon-prev:before {

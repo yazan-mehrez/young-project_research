@@ -8,24 +8,118 @@
     <a>Contact Us</a>
 </div>
 
-<div class="top-home">
-    <div class="navbar-login">
-        <div class="navbar"
-             [style.z-index]="collapsed ? '550' : ''"
-             [style.background-color]="collapsed ? '#fff' : ''">
-            <a id="nav-toggle" [ngClass]="collapsed ? 'active' : ''" (click)="collapsed = !collapsed">
-                <span [style.color]="collapsed ? '#1b2850' : ''"></span>
-            </a>
+<!--<div class="top-home">-->
+<!--    <div class="navbar-login">-->
+<!--        <div class="navbar"-->
+<!--             [style.z-index]="collapsed ? '550' : ''"-->
+<!--             [style.background-color]="collapsed ? '#fff' : ''">-->
+<!--            <a id="nav-toggle" [ngClass]="collapsed ? 'active' : ''" (click)="collapsed = !collapsed">-->
+<!--                <span [style.color]="collapsed ? '#1b2850' : ''"></span>-->
+<!--            </a>-->
+<!--        </div>-->
+<!--        <div class="login-register">-->
+<!--            <div class="lang">العربية</div>-->
+<!--            <div class="rigister">Register</div>-->
+<!--            <div class="login">Login</div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<div class="full-section top-home-login">
+    <div class="profile-photo" data-aos="fade-right" data-aos-duration="1000">
+        <img src="assets/img/member1.jpg" alt="">
+    </div>
+    <div class="right-section">
+        <div class="navbar-login">
+            <div class="navbar"
+                 [style.z-index]="collapsed ? '550' : ''"
+                 [style.background-color]="collapsed ? '#fff' : ''">
+                <a id="nav-toggle" [ngClass]="collapsed ? 'active' : ''" (click)="collapsed = !collapsed">
+                    <span [style.color]="collapsed ? '#1b2850' : ''"></span>
+                </a>
+            </div>
+            <div class="login-register">
+                <div class="lang">العربية</div>
+                <div class="rigister">Log out</div>
+            </div>
         </div>
-        <div class="login-register">
-            <div class="lang">العربية</div>
-            <div class="rigister">Register</div>
-            <div class="login">Login</div>
+        <div class="edit-profile">
+            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            <p>Edit profile</p>
         </div>
+        <div class="social-info">
+            <div class="info-user">
+
+                <div class="user-name">
+                    <div><img src="assets/img/member1.jpg" alt=""></div>
+                    <div class="full-name">
+                        <div class="title">
+                            <h2>Ghina sallit</h2>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="desc-user">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat
+                        volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa fa-university"></i>
+                            <div class="info-data">American University</div>
+                        </div>
+                        <div class="info-icon">
+                            <i class="fa fa-map-marker"></i>
+                            <div class="info-data">United Arab Emirates</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa fa-suitcase"></i>
+                            <div class="info-data">Informatics Engineer</div>
+                        </div>
+                        <div class="info-icon">
+                            <i class="fa fa-eye"></i>
+                            <div class="info-data">2.22Views</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa fa-file-text-o"></i>
+                            <div class="info-data">12 Research papers</div>
+                        </div>
+                        <div class="info-icon">
+                            <i class="fa fa-trophy"></i>
+                            <div class="info-data">1 Recognized Research</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="social">
+                <div><i class="fa fa-facebook"></i></div>
+                <div><i class="fa fa-instagram"></i></div>
+                <div><i class="fa fa-twitter"></i></div>
+                <div><i class="fa fa-youtube"></i></div>
+            </div>
+
+        </div>
+
+
     </div>
 </div>
 
-<div class="research-section d-flex" data-aos="fade-down" data-aos-duration="100">
+
+<div class="paper-section d-flex" data-aos="fade-down" data-aos-duration="100">
     <div class="social">
         <div><i class="fa fa-facebook"></i></div>
         <div><i class="fa fa-instagram"></i></div>
@@ -34,152 +128,62 @@
     </div>
 
     <div class="social-paper" data-aos="fade-left" data-aos-duration="1000">
-       <div class="cards-icon">
-           <div class="card-icon">
-               <div class="box">
-               </div>
-               <img src="assets/img/paper.png" alt="">
-               <div class="paper"><p>Submit A Paper</p></div>
-               <div class="blue-line"></div>
-           </div>
+        <div class="cards-icon">
+            <div class="card-icon-research">
+                <div class="box">
+                </div>
+                <img src="assets/img/paper.png" alt="">
+                <div class="paper"><p>Research A Paper</p></div>
+                <div class="blue-line"></div>
+            </div>
 
-           <div class="card-icon">
-               <div class="box">
-               </div>
-               <img src="assets/img/paper.png" alt="">
-               <div class="paper"><p>Submit A Paper</p></div>
-               <div class="blue-line"></div>
-           </div>
-       </div>
-
-
-
+            <div class="card-icon-submit">
+                <div class="box">
+                </div>
+                <img src="assets/img/paper.png" alt="">
+                <div class="paper"><p>Submit A Paper</p></div>
+                <div class="blue-line"></div>
+            </div>
+        </div>
     </div>
-    <!--<div class="title-search">-->
-    <!--<div class="research-title">-->
-    <!--<div class="title">-->
-    <!--<p>Research Papers</p>-->
-    <!--<div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div class="research-search">-->
-    <!--&lt;!&ndash;<div class="rsearch">&ndash;&gt;-->
-    <!--<div class="navigator">-->
-    <!--<div class="nav-block">-->
-    <!--&lt;!&ndash; navbar only &ndash;&gt;-->
-    <!--&lt;!&ndash; invoke the collapsed menu button for smallviewports &ndash;&gt;-->
-    <!--<label for="show-menu" class="show-menu"><span class="grow">&nbsp;&nbsp;<i class="fas fa-bars">&nbsp;&darr;&nbsp;</i></span></label>-->
-
-    <!--<input type="checkbox" id="show-menu" role="button">-->
-    <!--<div id="menu">-->
-    <!--<div class="drop-list" dropdown>-->
-    <!--&lt;!&ndash; Use unicode &#x25BC; for dropdown tringle-&ndash;&gt;-->
-    <!--<a dropdownToggle>Discipline <span>&#x25BE;</span></a>-->
-    <!--<div *dropdownMenu role="menu" class="dropdown-menu text-center">-->
-    <!--<div class="pt-2 pb-2"><a href="/mission">Mission</a></div>-->
-    <!--<div class="pt-2 pb-2"><a href="/purpose">Purpose</a></div>-->
-    <!--<div class="pt-2 pb-2"><a href="/leadership">Leadership</a></div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div class="drop-list"><a>Country</a></div>-->
-    <!--<div class="drop-list" dropdown>-->
-    <!--<a dropdownToggle>Language <span>&#x25BE;</span> </a>-->
-    <!--<div *dropdownMenu role="menu" class="dropdown-menu text-center">-->
-    <!--<div class="pt-2 pb-2"><a href="/showcase">Showcase</a></div>-->
-    <!--<div class="pt-2 pb-2"><a href="/scholarship">Scholarship</a></div>-->
-    <!--<div class="pt-2 pb-2"><a href="/testimonials">Testimonials</a></div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div class="drop-list"><a>Year</a></div>-->
-    <!--</div>-->
-    <!--</div>&lt;!&ndash;nav-block&ndash;&gt;-->
-    <!--</div>-->
-    <!--<div class="col-lg-12 research-input">-->
-    <!--<div class="row">-->
-    <!--<div class="input-group">-->
-    <!--<input type="text" class="form-control" placeholder="Search...">-->
-    <!--<span class="input-group-btn">-->
-    <!--<button class="btn btn-default" type="button"><i class="fa fa-search"-->
-    <!--aria-hidden="true"></i></button>-->
-    <!--</span>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-
-    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div class="cards-items">-->
-    <!--<div class="c-item" data-aos="fade-up" data-aos-duration="500">-->
-    <!--<div class="bookmark">-->
-    <!--<i class="fa fa-bookmark-o"></i>-->
-    <!--</div>-->
-    <!--<h3>Environmental health: How our-->
-    <!--food choices is affecting the earth.</h3>-->
-    <!--<div class="blue-sep"></div>-->
-    <!--<div>-->
-    <!--Lorem ipsum dolor sit amet, consectetuer-->
-    <!--adipiscing elit, sed diam nonummy nibh-->
-    <!--euismod tincidunt ut laoreet dolore magna-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div class="c-item" data-aos="fade-up" data-aos-duration="1000">-->
-    <!--<div class="bookmark">-->
-    <!--<i class="fa fa-bookmark-o"></i>-->
-    <!--</div>-->
-    <!--<h3>Environmental health: How our-->
-    <!--food choices is affecting the earth.</h3>-->
-    <!--<div class="blue-sep"></div>-->
-    <!--<div>-->
-    <!--Lorem ipsum dolor sit amet, consectetuer-->
-    <!--adipiscing elit, sed diam nonummy nibh-->
-    <!--euismod tincidunt ut laoreet dolore magna-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div class="c-item" data-aos="fade-up" data-aos-duration="1500">-->
-    <!--<div class="bookmark">-->
-    <!--<i class="fa fa-bookmark-o"></i>-->
-    <!--</div>-->
-    <!--<h3>Environmental health: How our-->
-    <!--food choices is affecting the earth.</h3>-->
-    <!--<div class="blue-sep"></div>-->
-    <!--<div>-->
-    <!--Lorem ipsum dolor sit amet, consectetuer-->
-    <!--adipiscing elit, sed diam nonummy nibh-->
-    <!--euismod tincidunt ut laoreet dolore magna-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div class="button-action">-->
-    <!--<button>View more</button>-->
-    <!--</div>-->
 </div>
+
 
 <div class="full-section" data-aos="fade-up" data-aos-duration="1000">
     <div class="left-sticker"></div>
     <div class="center-sticker"></div>
     <div class="side">
         <div class="sec-img">
-            <img src="assets/img/img223.jpg">
+            <img src="assets/img/member1.jpg">
         </div>
     </div>
     <div class="side">
         <div class="sec-content">
-            <h1 class="text-left">About Arab Youth Research Library</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aperiam atque consequuntur ducimus
-                et
-                fuga fugiat non odit quos, ratione repellendus, sapiente temporibus totam veritatis! Ipsum laborum
-                officia
-                voluptatibus.</p>
+            <div class="about-content">
+                <h1 class="text-left">
+                    <p>About</p>
+                    <p>Arab Youth</p>
+                    <p> Research Library</p></h1>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aperiam atque consequuntur
+                        ducimus
+                        et
+                        fuga fugiat non odit quos, ratione repellendus, sapiente temporibus totam veritatis! Ipsum
+                        laborum
+                        officia
+                        voluptatibus.</p>
+                </div>
+                <div>
+                    <div class="title read-more">
+                        <p>Read more</p>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
 
-            <h3>Read More</h3>
-            <div class="blue-sep"></div>
         </div>
     </div>
 </div>
-
 <div class="become-researcher" data-aos="fade-up" data-aos-duration="1000">
     <div class="title">
         <p>Become a Researcher</p>
@@ -188,20 +192,24 @@
     <div class="cards">
         <div class="card-item">
             <img src="assets/img/broad-knowledge.PNG" alt="">
-            <div desc="desc-line">
-                <div class="desc"><p>Broad knowledge prospects</p></div>
-                <div class="card-line"></div>
+            <div class="title">
+                <p>Broad knowledge prospects</p>
+                <div></div>
             </div>
         </div>
         <div class="card-item">
             <img src="assets/img/job-opportunities.PNG" alt="">
-            <div class="desc"><p>Job opportunities and studies</p></div>
-            <div class="card-line"></div>
+            <div class="title">
+                <p>Job opportunities and studies</p>
+                <div></div>
+            </div>
         </div>
         <div class="card-item">
             <img src="assets/img/sharing-knowledge.PNG" alt="">
-            <div class="desc"><p>Sharing Knowledge</p></div>
-            <div class="card-line"></div>
+            <div class="title">
+                <p>Sharing Knowledge</p>
+                <div></div>
+            </div>
         </div>
     </div>
     <div class="button-action">
@@ -211,10 +219,10 @@
 
 </div>
 
-<div class="full-section" data-aos="fade-up" data-aos-duration="1000">
+<div class="full-section our-members" data-aos="fade-up" data-aos-duration="1000">
 
     <div class="full-section with-slider">
-        <div class="left-sticker"></div>
+        <div class="top-sticker"></div>
         <div class="center-sticker"></div>
         <div class="side">
             <div class="sec-img">
@@ -225,23 +233,35 @@
         </div>
         <div class="side">
             <div class="sec-content">
-                <h1 class="text-left">Our Members</h1>
-                <div class="main-slider">
-                    <div class="left-slide" (click)="prev()">
-                        <i class="fa fa-chevron-left"></i>
+                <div class="about-content">
+                    <h1 class="text-left">
+                        <p>Our Research</p>
+                        <p>Members</p>
+                    </h1>
+                    <div class="main-slider">
+                        <div class="left-slide" (click)="prev()">
+                            <i class="fa fa-chevron-left"></i>
+                        </div>
+                        <div class="slider-control">
+                            <ng-container *ngFor="let text of dataList; let i = index">
+                                <p [@fadeInOut] *ngIf="itemIndex == i">{{dataList[i]['text']}}</p>
+                            </ng-container>
+                        </div>
+                        <div class="right-slide" (click)="next()">
+                            <i class="fa fa-chevron-right"></i>
+                        </div>
                     </div>
-                    <div class="slider-control">
-                        <ng-container *ngFor="let text of dataList; let i = index">
-                            <p [@fadeInOut] *ngIf="itemIndex == i">{{dataList[i]['text']}}</p>
-                        </ng-container>
+                    <div class="member-name">
+                        <h4>- Ghina Sallit</h4>
                     </div>
-                    <div class="right-slide" (click)="next()">
-                        <i class="fa fa-chevron-right"></i>
+                    <div>
+                        <div class="title read-more">
+                            <p>Learn more</p>
+                            <div></div>
+                        </div>
                     </div>
-                </div>
-                <h3>Read More</h3>
-                <div class="blue-sep"></div>
 
+                </div>
             </div>
         </div>
     </div>
@@ -252,6 +272,14 @@
         <p>Heat Map</p>
         <div></div>
     </div>
+
+        <div
+<!--                style="height: 100vh;"-->
+<!--                leaflet [leafletOptions]="options"-->
+<!--                (leafletMapReady)="onMapReady($event)">-->
+        </div>
+
+
     <div class="map">
         <img src="assets/img/heat-map.PNG" alt="">
         <div class="statistics">
@@ -270,10 +298,64 @@
         </div>
     </div>
 </div>
+<div class="full-section partners" data-aos="fade-up" data-aos-duration="1000">
+
+    <div class="full-section with-slider">
+        <div class="top-sticker"></div>
+        <div class="center-sticker"></div>
+        <div class="side">
+            <div class="logo-partner">
+                <img src="assets/img/partners.PNG">
+            </div>
+        </div>
+        <div class="side">
+            <div class="sec-content">
+                <div class="about-content">
+                    <h1 class="text-left">
+                        <p>Our Partners</p>
+                    </h1>
+
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aperiam atque
+                            consequuntur
+                            ducimus
+                            et
+                            fuga fugiat non odit quos, ratione repellendus, sapiente temporibus totam veritatis! Ipsum
+                            laborum
+                            officia
+                            voluptatibusLorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aperiam
+                            atque consequuntur
+                            ducimus
+                            et
+                            fuga fugiat non odit quos, ratione repellendus, sapiente temporibus totam veritatis! Ipsum
+                            laborum
+                            officia
+                            voluptatibusLorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aperiam
+                            atque consequuntur
+                            ducimus
+                            et
+                            fuga fugiat non odit quos, ratione repellendus, sapiente temporibus totam veritatis! Ipsum
+                            laborum
+                            officia
+                            voluptatibusLorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aperiam
+                            atque consequuntur
+                            ducimus
+                            et
+                            fuga fugiat non odit quos, ratione repellendus, sapiente temporibus totam veritatis! Ipsum
+                            laborum
+                            officia
+                            voluptatibus.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="frequent-asked-questions">
     <div class="title">
-        <p>FAQ</p>
+        <p>FAQs</p>
         <div></div>
     </div>
 
@@ -283,35 +365,29 @@
 </div>
 <div class="full-section contact" data-aos="fade-up" data-aos-duration="1000">
     <div class="side">
-        <div class="sec-img">
-            <!--            <img src="assets/img/map.PNG">-->
-            <main class=" m-0 p-0" style="height: 100%">
-                <div style="height: 100%">
-
-                    <!--Google map-->
-                    <div id="map-container-google-4" class="z-depth-1-half map-container-4">
-                        <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                frameborder="0"
-                                style="border:0" allowfullscreen></iframe>
-                    </div>
-
-                </div>
-            </main>
-        </div>
-    </div>
-    <div class="side">
         <div class="sec-content">
             <h1 class="text-left">Contact us</h1>
             <div class="contact-info">
-                <p>Email: info@arabyouthcenter.com</p>
-                <p>Address: Dubai, X Building 9th floo</p>
-                <p>Contact Number: 04 123 4567</p>
+                <h3>Email: info@arabyouthcenter.com</h3>
+                <h3>Address: Dubai, X Building 9th floo</h3>
+                <h3>Contact Number: 04 123 4567</h3>
             </div>
+            <div class="social-contact">
+                <div><i class="fa fa-facebook"></i></div>
+                <div><i class="fa fa-instagram"></i></div>
+                <div><i class="fa fa-twitter"></i></div>
+                <div><i class="fa fa-youtube"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="side">
+        <div class="top-sticker"></div>
+        <div class="sec-content">
             <div class="title">
                 <p>Enquiry</p>
                 <div></div>
             </div>
-            <div class="full-section form-input">
+            <div class=" form-input">
                 <form class="example-form" [formGroup]="myForm">
                     <div class="item">
                         <mat-form-field class="example-full-width">

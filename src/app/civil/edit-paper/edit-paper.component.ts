@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
-  selector: 'app-details-paper',
-  templateUrl: './details-paper.component.html',
-  styleUrls: ['./details-paper.component.css']
+  selector: 'app-edit-paper',
+  templateUrl: './edit-paper.component.html',
+  styleUrls: ['./edit-paper.component.css']
 })
-export class DetailsPaperComponent implements OnInit {
+export class EditPaperComponent implements OnInit {
   paperForm: FormGroup;
   collapsed = false;
   toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
@@ -33,6 +33,7 @@ export class DetailsPaperComponent implements OnInit {
   savePaper(){
     console.log('test');
   }
+
   ngOnInit() {
   }
 

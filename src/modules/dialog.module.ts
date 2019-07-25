@@ -11,31 +11,32 @@ import {
     MatToolbarModule
 } from '@angular/material';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {BrowserModule} from "@angular/platform-browser";
+import {BrowserModule} from '@angular/platform-browser';
 import {TranslateModule} from '@ngx-translate/core';
 import {ProfileInfoComponent} from '../app/dialogs/profile-info/profile-info.component';
+import {PaperComponent} from '../app/dialogs/paper/paper.component';
 
 @NgModule({
-    declarations: [ProfileInfoComponent],
+    declarations: [ProfileInfoComponent, PaperComponent],
     imports: [
         MatFormFieldModule,
         MatInputModule,
         TranslateModule,
         CommonModule,
         BrowserModule,
-        FormsModule,
         MatButtonModule,
         MatMenuModule,
         MatToolbarModule,
         MatIconModule,
         MatCardModule,
         MatDialogModule,
-
         MatSelectModule,
+        FormsModule,
         ReactiveFormsModule,
-
     ],
     entryComponents: [
+
+        PaperComponent,
         ProfileInfoComponent
     ],
     exports: [
@@ -44,6 +45,7 @@ import {ProfileInfoComponent} from '../app/dialogs/profile-info/profile-info.com
         MatToolbarModule,
         MatIconModule,
         MatCardModule,
+        FormsModule,
         BrowserAnimationsModule],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

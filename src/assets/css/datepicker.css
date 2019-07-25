@@ -451,19 +451,19 @@ bs-daterangepicker-container {
     opacity: 0.5;
     transition: 0s; }
 
-.theme-orange .bs-datepicker-head {
+.theme-#FDD97A .bs-datepicker-head {
     background-color: #f0ad4e; }
 
-.theme-orange .bs-datepicker-body table td span.selected,
-.theme-orange .bs-datepicker-body table td.selected span,
-.theme-orange .bs-datepicker-body table td span[class*="select-"]:after,
-.theme-orange .bs-datepicker-body table td[class*="select-"] span:after {
+.theme-#FDD97A .bs-datepicker-body table td span.selected,
+.theme-#FDD97A .bs-datepicker-body table td.selected span,
+.theme-#FDD97A .bs-datepicker-body table td span[class*="select-"]:after,
+.theme-#FDD97A .bs-datepicker-body table td[class*="select-"] span:after {
     background-color: #f0ad4e; }
 
-.theme-orange .bs-datepicker-body table td.week span {
+.theme-#FDD97A .bs-datepicker-body table td.week span {
     color: #f0ad4e; }
 
-.theme-orange .bs-datepicker-body table td.active-week span:hover {
+.theme-#FDD97A .bs-datepicker-body table td.active-week span:hover {
     cursor: pointer;
     background-color: #f0ad4e;
     color: #fff;
