@@ -34,7 +34,7 @@
     "core-js": "^2.5.4",
     "firebase": "^5.8.6",
     "grpc": "^1.21.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "ng-simple-slideshow": "^1.2.8",
     "ngx-bootstrap": "^3.2.0",
     "ngx-swiper-wrapper": "^7.2.1",
